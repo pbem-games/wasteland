@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Wasteland Rules</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<style>body {font-family: Tahoma; font-size: 10pt;}
+.cmddesc {color: #C0C0C0} 
+.report { border: solid 1px #808080; padding-left: 15px; font-family: Courier New; font-size: 9pt;}</style>
+
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+
+<h3>Common mistakes</h3>
+
+<ul>
+<li>Only Chosen One can hire new characters. Yes, you can't hire NPC by sending scouts.
+<li>If a team producing something, only leader should receive PRODUCE order. Subordinates should not receive any full-turn orders - they are automatically executing same full-turn order with leader.
+<li>Person can't learn a new talent. Usual person has 2 talents out of following: "reflexes", "cooking", "survival", "scavenge", "driving", "building".
+<li>Rats are produced with PRODUCE RAT order, but you will receive dead rats [RATD] instead of rats [RAT].
+</ul>
+
+<h3>Hints</h3>
+
+<ul>
+<li>Do not hesitate to KICK a person if you can't feed him. The difference from Atlantis is you can't issue WORK order if you don't know what to do with your man.
+<li>From the start you'll need as much as possible people with "survival" (avoiding battle) and 1-2 patrollers with "reflexes" to keep them safe. If you are producing rats, you'll soon need a cook to make 3 rations out of one rat.
+<li>Beware of radiation. There is one-turn fallout season, when radiation is doubled. 
+<li>The climate is nuclear winter. Be prepared to winter colds, build the shelter (barracks will do at first), prepare warm clothes. Think of a way to get burnable items in case that will not be enough.
+</ul>
+
+</body>
+</html>

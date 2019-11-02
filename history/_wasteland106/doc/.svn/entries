@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="78"
+   name=""
+   committed-date="2006-04-24T18:28:44.980365Z"
+   url="svn://visualsystems.com.pl/inne/Wasteland/trunk/doc"
+   last-author="gnawer"
+   kind="dir"
+   uuid="a249c678-c50f-0410-b4b8-beb0d8fd5239"
+   repos="svn://visualsystems.com.pl/inne/Wasteland"
+   revision="81"/>
+<entry
+   committed-rev="78"
+   name="rules_en.html"
+   text-time="2006-04-25T05:10:50.303078Z"
+   committed-date="2006-04-24T18:28:44.980365Z"
+   checksum="f6a8fab17c876a23175738c88224a98f"
+   last-author="gnawer"
+   kind="file"
+   prop-time="2006-04-25T05:10:49.772394Z"/>
+<entry
+   committed-rev="78"
+   name="reference.html"
+   text-time="2006-04-25T05:10:50.423233Z"
+   committed-date="2006-04-24T18:28:44.980365Z"
+   checksum="bbf4bb5a399621b92a27dd7b690a2f51"
+   last-author="gnawer"
+   kind="file"
+   prop-time="2006-04-25T05:10:50.102820Z"/>
+<entry
+   committed-rev="78"
+   name="TODO.txt"
+   text-time="2006-04-25T05:10:50.463284Z"
+   committed-date="2006-04-24T18:28:44.980365Z"
+   checksum="1f8343149f4c85476989bfb604ce202f"
+   last-author="gnawer"
+   kind="file"
+   prop-time="2006-04-25T05:10:50.162897Z"/>
+<entry
+   committed-rev="78"
+   name="reference_en.html"
+   text-time="2006-04-25T05:10:50.503336Z"
+   committed-date="2006-04-24T18:28:44.980365Z"
+   checksum="62e377ab59edc59cb19cafbd43f389c0"
+   last-author="gnawer"
+   kind="file"
+   prop-time="2006-04-25T05:10:50.202949Z"/>
+<entry
+   committed-rev="58"
+   name="hints.html"
+   text-time="2006-04-10T05:49:04.630132Z"
+   committed-date="2006-04-10T06:15:28.143986Z"
+   checksum="dd0a076d5a6a9e2f72d6589b0c981cca"
+   last-author="gnawer"
+   kind="file"/>
+<entry
+   committed-rev="78"
+   name="server.html"
+   text-time="2006-04-25T05:10:50.533375Z"
+   committed-date="2006-04-24T18:28:44.980365Z"
+   checksum="adc4de321f19ba2f87eae068ea9e0b19"
+   last-author="gnawer"
+   kind="file"
+   prop-time="2006-04-25T05:10:50.243001Z"/>
+<entry
+   committed-rev="58"
+   name="hints_en.html"
+   text-time="2006-04-10T05:49:21.012748Z"
+   committed-date="2006-04-10T06:15:28.143986Z"
+   checksum="20dab3c03f7582998b6e3a58006f9a9a"
+   last-author="gnawer"
+   kind="file"/>
+<entry
+   committed-rev="78"
+   name="server_en.html"
+   text-time="2006-04-25T05:10:50.333117Z"
+   committed-date="2006-04-24T18:28:44.980365Z"
+   checksum="beee8d365ddb6795563528a8b90bbc4b"
+   last-author="gnawer"
+   kind="file"
+   prop-time="2006-04-25T05:10:49.812446Z"/>
+<entry
+   committed-rev="78"
+   name="rules.html"
+   text-time="2006-04-25T05:10:50.383181Z"
+   committed-date="2006-04-24T18:28:44.980365Z"
+   checksum="07374760211a147d0ff5883f46c9c98b"
+   last-author="gnawer"
+   kind="file"
+   prop-time="2006-04-25T05:10:49.892549Z"/>
+</wc-entries>

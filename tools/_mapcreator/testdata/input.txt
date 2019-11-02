@@ -1,0 +1,8 @@
+R g G w
+ R F W C
+
+A A B B
+ A B B B
+
+A=The City
+B=Dark Forest

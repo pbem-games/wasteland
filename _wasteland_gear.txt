@@ -1,0 +1,301 @@
+Skill reports:
+
+reflexes [REFL] : This skill determines order of actions in combat.
+
+ranged combat [RANG] : This skill is required to use ranged weapons.
+  This skill requires reflexes [REFL] to study.
+
+melee combat [MELE] : This skill is required to use melee weapons, or
+  to fight with martial arts. This skill requires reflexes [REFL] to
+  study.
+
+cooking [COOK] : A person with this skill may PRODUCE grilled rats
+  [GRIL], roasted meat [ROAS], and dried mushrooms [DMUS].
+
+scavenge [SCAV] : A person with this skill can SCAVENGE up to (skill
+  level) items from Junk.
+
+driver [DRIV] : A person with this skill may PRODUCE gasoline [GAS]. A
+  person with this skill can DRIVE car [CAR], truck [TRUC], armored car
+  [ACAR], tank [TANK], and tractor [TRAC].
+
+survival [SURV] : This talent represents basic knowledge of countryside
+  life and always has level 100, if known by person.
+
+hunting [HUNT] : This skill requires survival [SURV] to study. A person
+  with this skill may PRODUCE rats [RAT], and radrats [RRAT].
+
+farming [FARM] : This skill requires survival [SURV] to study. A person
+  with this skill may PRODUCE mushrooms [MUSH]. A person with this
+  skill can INSTALL and UNINSTALL mushrooms [MUSH].
+
+woodcutter [WOOD] : This skill requires survival [SURV] to study. A
+  person with this skill may PRODUCE wood [WOOD].
+
+building [BUIL] : A person with this skill can INSTALL and UNINSTALL
+  wood [WOOD], concrete blocks [BLOC], and metal constructions [CONS].
+  It allows to BUILD: hut [HUT], vault [VAUL], bunker [BUNK], barracks
+  [BARR], and hydroponic plantation [HYDR].
+
+tailor [TAIL] : This skill requires scavenge [SCAV] to study. A person
+  with this skill may PRODUCE fur coats [FCOA], leather jackets [LJAC],
+  and leather coats [LCOA].
+
+doctor [DOC] : A person with this skill can CURE up to (skill level /
+  20) persons per turn, using medicine [MEDI]. This skill requires
+  cooking [COOK] to study.
+
+chemistry [CHEM] : This skill requires cooking [COOK] to study. A
+  person with this skill may PRODUCE nitre [NITR], and gunpowder
+  [POWD].
+
+gunsmith [GUNS] : This skill requires scavenge [SCAV] to study. A
+  person with this skill may PRODUCE pipe rifles [PRIF], remodeled gas
+  guns [RGGU], 9mm ammo [900A], 7.62mm ammo [762A], 5.56mm ammo [556A],
+  12.7mm ammo [127A], and 12 gauge ammo [12GA].
+
+mechanics [MECH] : This skill requires driver [DRIV] to study. A person
+  with this skill may PRODUCE steel pipes [PIPE]. A person with this
+  skill can INSTALL and UNINSTALL car details [DETA], plane details
+  [PDET], engines [ENGI], autoguns [AUTO], and flamethrowes [FLAM]. It
+  allows to BUILD: car [CAR], truck [TRUC], armored car [ACAR], tank
+  [TANK], and tractor [TRAC].
+
+heavy weapons [HWPN] : This skill is required to use heavy weapons.
+  This skill requires ranged combat [RANG] to study.
+
+witch doctor [WITC] : This skill requires doctor [DOC] to study. A
+  person with this skill may PRODUCE wormwood [WEED], and medicine
+  [MEDI].
+
+explosives [EXPL] : This skill is required to use explosives in combat.
+  This skill requires chemistry [CHEM] to study. A person with this
+  skill may PRODUCE pipe grenades [GREN], and bomb [BOMB].
+
+war engineer [ENGI] : This skill requires mechanics [MECH] to study. A
+  person with this skill can INSTALL and UNINSTALL tank armor [TARM].
+
+armorer [ARMO] : This skill requires tailor [TAIL] to study. A person
+  with this skill may PRODUCE steel armor [ARMO].
+
+specialist tailor [STAI] : This skill requires tailor [TAIL] to study.
+  This is a special skill, a person can learn it only from team leader.
+  A person with this skill may PRODUCE polar overalls [POVE], and
+  ratskin overalls [ROVE].
+
+Item reports:
+
+concrete block [BLOC] : weight 100 kg. Persons with building [BUIL] 5
+  can INSTALL this item, or use it to BUILD vault [VAUL], bunker
+  [BUNK], and barracks [BARR].
+
+metal construction [CONS] : weight 40 kg. Persons with building [BUIL]
+  10 can INSTALL this item, or use it to BUILD hydroponic plantation
+  [HYDR].
+
+autogun [AUTO] : weight 40 kg. Persons with mechanics [MECH] 1 can
+  INSTALL this item. This is a ranged heavy anti-tank weapon. It has 5
+  attacks. Hit modifier: -25%. Wound chance: 40%. 1 object's HP
+  inflicted by each hit. Ammo required: 12.7mm ammo [127A]. Skill
+  required: heavy weapons [HWPN].
+
+flamethrower [FLAM] : weight 40 kg. Persons with mechanics [MECH] 1 can
+  INSTALL this item. This is a ranged heavy weapon. It hits 5 targets
+  with single attack. Hit modifier: +25%. Armor modifier: -100%. Wound
+  chance: 50%. Target has 50% chance to die from direct hit. Ammo
+  required: gasoline [GAS]. Skill required: heavy weapons [HWPN].
+
+tank armor [TARM] : weight 40 kg. Persons with war engineer [ENGI] 10
+  can INSTALL this item.
+
+chainsaw [CHAI] : weight 10 kg. This is a melee weapon. Hit modifier:
+  -10%. Armor modifier: -25%. Wound chance: 90%. Target has 90% chance
+  to die from direct hit. Ammo required: gasoline [GAS]. Skill
+  required: melee combat [MELE].
+
+fur coat [FCOA] : weight 5 kg. Persons with tailor [TAIL] 20 can
+  PRODUCE this item from 5 wolfdog furs [FUR] at a rate of 1 per turn.
+  This item protects its owner from 25° cold.
+
+leather jacket [LJAC] : weight 3 kg. Persons with tailor [TAIL] 10 can
+  PRODUCE this item from rat hide [HIDE] at a rate of 1 per turn. This
+  item protects its owner from 10° cold. This armor provides 20% armor
+  save in combat.
+
+bulletproof jacket [BJAC] : weight 8 kg. This armor provides 50% armor
+  save in combat.
+
+swat armor [SWAT] : weight 15 kg. This item lowers radiation by 10 for
+  its owner. This item protects its owner from 10° cold. This armor
+  provides 90% armor save in combat.
+
+leather coat [LCOA] : weight 5 kg. Persons with tailor [TAIL] 20 can
+  PRODUCE this item from rat hide [HIDE] and wolfdog fur [FUR] at a
+  rate of 1 per turn. This item protects its owner from 20° cold. This
+  armor provides 30% armor save in combat.
+
+quilted jacket [QJAC] : weight 1 kg. This item protects its owner from
+  20° cold.
+
+sweater [SWEA] : weight 1 kg. This item protects its owner from 10°
+  cold.
+
+police jacket [PJAC] : weight 5 kg. This item protects its owner from
+  25° cold.
+
+camouflage jacket [CJAC] : weight 5 kg. This item protects its owner
+  from 25° cold.
+
+makarov [PM] : weight 1 kg. This is a ranged weapon. Armor modifier:
+  -10%. Wound chance: 70%. Target has 75% chance to die from direct
+  hit. Ammo required: 9mm ammo [900A]. Skill required: ranged combat
+  [RANG].
+
+kalashnikov [AKM] : weight 4 kg. This is a ranged weapon. It has 5
+  attacks. Hit modifier: -25%. Armor modifier: -10%. Wound chance: 95%.
+  Target has 90% chance to die from direct hit. Ammo required: 7.62mm
+  ammo [762A]. Skill required: ranged combat [RANG].
+
+kalashnikov-m [AK101] : weight 4 kg. This is a ranged weapon. It has 5
+  attacks. Hit modifier: -20%. Armor modifier: -10%. Wound chance: 90%.
+  Target has 75% chance to die from direct hit. Ammo required: 5.56mm
+  ammo [556A]. Skill required: ranged combat [RANG].
+
+hunting rifle [RIFL] : weight 4 kg. This is a ranged weapon. Hit
+  modifier: +10%. Armor modifier: -10%. Wound chance: 90%. Target has
+  75% chance to die from direct hit. Ammo required: 5.56mm ammo [556A].
+  Skill required: ranged combat [RANG].
+
+shotgun [SHOT] : weight 4 kg. This is a ranged weapon. Hit modifier:
+  +25%. Armor modifier: +25%. Wound chance: 70%. Target has 50% chance
+  to die from direct hit. Ammo required: 12 gauge ammo [12GA]. Skill
+  required: ranged combat [RANG].
+
+sawed-off shotgun [SSHO] : weight 2 kg. This is a ranged weapon. Hit
+  modifier: +25%. Armor modifier: +35%. Wound chance: 50%. Target has
+  50% chance to die from direct hit. Ammo required: 12 gauge ammo
+  [12GA]. Skill required: ranged combat [RANG].
+
+nitre [NITR] : weight 1 kg. Persons with chemistry [CHEM] 1 can PRODUCE
+  this item at a rate of 1 per turn.
+
+gunpowder [POWD] : weight 1 kg. Persons with chemistry [CHEM] 5 can
+  PRODUCE this item from nitre [NITR] at a rate of 1 per turn.
+
+gas mask [GASM] : weight 1 kg. This item lowers radiation by 70 for its
+  owner.
+
+gasoline [GAS] : weight 1 kg. Persons with driver [DRIV] 1 can PRODUCE
+  this item inside a FUEL at a rate of 1 per turn. This item may be
+  burned.
+
+wood [WOOD] : weight 10 kg. Persons with woodcutter [WOOD] 1 can
+  PRODUCE this item at a rate of 1 per turn. Persons with building
+  [BUIL] 1 can INSTALL this item, or use it to BUILD hut [HUT]. This
+  item may be burned.
+
+car detail [DETA] : weight 10 kg. Persons with mechanics [MECH] 10 can
+  INSTALL this item, or use it to BUILD car [CAR], truck [TRUC],
+  armored car [ACAR], tank [TANK], and tractor [TRAC].
+
+pipe grenade [GREN] : weight 1 kg. Persons with explosives [EXPL] 20
+  can PRODUCE this item from steel pipe [PIPE] and 30 gunpowder [POWD]
+  at a rate of 2 per turn. This is a ranged thrown weapon. It hits 3
+  targets with single attack. Armor modifier: +10%. Wound chance: 50%.
+  Target has 50% chance to die from direct hit. Skill required:
+  pyromania [PYRO].
+
+bomb [BOMB] : weight 5 kg. Persons with explosives [EXPL] 50 can
+  PRODUCE this item from 50 gunpowder [POWD] at a rate of 1 per turn.
+  This is a melee explosive weapon. Wound chance: 50%. Target has 5%
+  chance to die from direct hit. Skill required: explosives [EXPL].
+
+medicine [MEDI] : weight 0 kg. Persons with witch doctor [WITC] 10 can
+  PRODUCE this item from 2 wormwood [WEED] at a rate of 1 per turn.
+
+steel armor [ARMO] : weight 35 kg. Persons with armorer [ARMO] 50 can
+  PRODUCE this item from rat hide [HIDE] and 2 car details [DETA] at a
+  rate of 1 per turn. This item protects its owner from 10° cold. This
+  armor provides 75% armor save in combat.
+
+polar overalls [POVE] : weight 5 kg. Persons with specialist tailor
+  [STAI] 50 can PRODUCE this item from 2 quilted jackets [QJAC] and 2
+  wolfdog furs [FUR] at a rate of 1 per turn. This item protects its
+  owner from 40° cold.
+
+wormwood [WEED] : weight 0 kg. Persons with witch doctor [WITC] 1 can
+  PRODUCE this item at a rate of 1 per turn.
+
+Object reports:
+
+car [CAR]: This is a vehicle with capacity 400 kg. It can move for 8
+  regions per turn, spending 1 gasoline [GAS] per region. A person must
+  know driver [DRIV] 10 to DRIVE this vehicle. This structure provides
+  protection to first 4 persons inside. This structure protects persons
+  inside from 5° cold. This structure requires 10 car details [DETA],
+  engine [ENGI] to complete.
+
+tank [TANK]: This is a vehicle with capacity 1000 kg. It can move for 3
+  regions per turn, spending 1 gasoline [GAS] per region. A person must
+  know driver [DRIV] 50 to DRIVE this vehicle. This structure provides
+  protection to first 4 persons inside. Radiation inside this structure
+  is lowered by 30. This structure protects persons inside from 10°
+  cold. It provides defence in battle and has 10 hit points. This
+  structure requires 40 car details [DETA], 20 tank armor [TARM],
+  engine [ENGI] to complete. Optional components are: 2 autoguns
+  [AUTO], 2 flamethrowes [FLAM].
+
+truck [TRUC]: This is a vehicle with capacity 5000 kg. It can move for
+  6 regions per turn, spending 1 gasoline [GAS] per region. A person
+  must know driver [DRIV] 20 to DRIVE this vehicle. This structure
+  provides protection to first 2 persons inside. This structure
+  protects persons inside from 5° cold. This structure requires 40 car
+  details [DETA], engine [ENGI] to complete.
+
+tractor [TRAC]: This is a vehicle with capacity 2000 kg. It can move
+  for 2 regions per turn, spending 1 gasoline [GAS] per region. A
+  person must know driver [DRIV] 10 to DRIVE this vehicle. This vehicle
+  can move in burned forest. This structure provides protection to
+  first 1 persons inside. This structure protects persons inside from
+  5° cold. This structure requires 10 car details [DETA], engine [ENGI]
+  to complete.
+
+armored car [ACAR]: This is a vehicle with capacity 200 kg. It can move
+  for 4 regions per turn, spending 1 gasoline [GAS] per region. A
+  person must know driver [DRIV] 20 to DRIVE this vehicle. This
+  structure provides protection to first 2 persons inside. Radiation
+  inside this structure is lowered by 10. This structure protects
+  persons inside from 5° cold. It provides defence in battle and has 1
+  hit points. This structure requires 20 car details [DETA], engine
+  [ENGI] to complete. Optional components are: autogun [AUTO],
+  flamethrower [FLAM].
+
+barracks [BARR]: This is a building. This structure provides protection
+  to first 10 persons inside. Radiation inside this structure is
+  lowered by 20. This structure protects persons inside from 20° cold.
+  This structure requires 10 concrete blocks [BLOC] to complete.
+
+vault [VAUL]: This is a building. This structure provides protection to
+  first 100 persons inside. Radiation inside this structure is lowered
+  by 100. This structure protects persons inside from 30° cold. This
+  structure requires 100 concrete blocks [BLOC], 100 metal
+  constructions [CONS] to complete.
+
+hydroponic plantation [HYDR]: This is a building. This structure
+  provides protection to first 10 persons inside. This structure
+  protects persons inside from 20° cold. Structure adds 100 mushrooms
+  [MUSH] to region resources. This structure requires 10 metal
+  constructions [CONS], 100 mushrooms [MUSH] to complete.
+
+bunker [BUNK]: This is a building. This structure provides protection
+  to first 5 persons inside. Radiation inside this structure is lowered
+  by 20. This structure protects persons inside from 10° cold. It
+  provides defence in battle and has 10 hit points. This structure
+  requires 10 concrete blocks [BLOC], 10 metal constructions [CONS] to
+  complete. Optional components are: 2 autoguns [AUTO], 2 flamethrowes
+  [FLAM].
+
+fuelling station [FUEL]: This is a building. Structure adds 10 gasoline
+  [GAS] to region resources. This structure requires 10 concrete blocks
+  [BLOC], 20 metal constructions [CONS] to complete. A person can't
+  BUILD new objects of this type.

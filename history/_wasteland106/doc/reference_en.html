@@ -1,0 +1,264 @@
+<html>
+<head>
+<title>Wasteland Rules</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<style> 
+body {font-family: Tahoma; font-size: 10pt;}
+.cmddesc {color: #C0C0C0} </style>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<h2 align="left">Order list</h2>
+<ul>
+  <li><b>order for leader</b>: this order should be issued to team leader</li>
+  <li><b>full-turn</b>: only one full-turn order may be issued to person for one 
+    turn. </li>
+</ul>
+<h3>ADDRESS</h3>
+ADDRESS &quot;mail@mail.ru&quot; 
+<p>Change e-mail you want your reports to be sent to.<br>
+</p>
+<h3>ATTACK</h3>
+<p>ATTACK 123</p>
+<p class="cmddesc">Order for leader.</p>
+<p>Attack given person.</p>
+<h3>AVOID</h3>
+<p>AVOID 1<br>
+  AVOID 0</p>
+<p>&quot;Avoid battle&quot;. Person with AVOID flag set will when possible stay 
+  away from combat and flee if attacked. Patrolling persons can't have this flag.</p>
+<h3>BUILD</h3>
+<p> BUILD &quot;Tank&quot;</p>
+<p><span class="cmddesc">Order for leader, full-turn.</span><br>
+</p>
+<p>Start construction of new object of given type. If constructions requires more 
+  than one turn, you must use INSTALL in second and following turns instead.</p>
+<h3>BURN</h3>
+<p>BURN WOOD GAS</p>
+<p>Set the order in which a person will choose fuel to warm himself in cold times. 
+  In this example, a person will burn the wood first, and will burn gasoline only 
+  if have no wood.</p>
+<p>BURN</p>
+<p>Restore default sequence.</p>
+<h3>CONSUME</h3>
+<p>CONSUME RAT CAN</p>
+<p>Set the order in which a person will choose what to eat. In this example, person 
+  will first eat all rats in his possession, and only after that will eat canned 
+  food. </p>
+<p>CONSUME</p>
+<p>Restore default sequence.</p>
+<h3>CURE</h3>
+<p>CURE 123 134 145</p>
+<p class="cmddesc">Order for leader, full-turn.</p>
+<p>Cure given persons.</p>
+<h3></h3>
+<h3>DECLARE</h3>
+<p>DECLARE 12 Neutral</p>
+<p>Declare attitude to given faction.</p>
+<p>DECLARE DEFAULT Neutral<br>
+</p>
+<p>Declare default attitude. </p>
+<h3>DESCRIBE</h3>
+<p>DESCRIBE PERSON &quot;This is the person&quot;<br>
+  DESCRIBE OBJECT &quot;This is the building&quot;</p>
+<p>Set person or object description. You must own object to describe.</p>
+<h3>DRIVE</h3>
+<p>DRIVE [list of directions]<br>
+  DRIVE ATTACK [list of directions]</p>
+<p><span class="cmddesc">Order for leader, full-turn.</span><br>
+</p>
+<p>Drive a vehicle in given directions. If more than one direction supplied, person 
+  will try to drive as far as he can. To execute this order, person must be inside 
+  a vehicle and own it (be first person in list below the vehicle), and have required 
+  skill. </p>
+<p>Following directions used: N, NW, SW, S, SE, NE (example: MOVE N).<br>
+</p>
+<p>If ATTACK directive supplied, person will attack patrols trying to block his 
+  way.</p>
+<h3>ENTER<br>
+</h3>
+<p>ENTER 123</p>
+<p><span class="cmddesc">Order for leader.</span><br>
+</p>
+<p>Enter given object. If this order issued to person, which already in other 
+  object, he will leave current one first. Order will be executed successfully 
+  only if given object is empty or is owned by friendly faction.</p>
+<h3>EQUIPMENT</h3>
+<p>EQUIPMENT &quot;kalashnikov&quot; &quot;makarov&quot; &quot;pipe rifle&quot; 
+  &quot;steel armor&quot; &quot;leather jacket&quot;</p>
+<p>Set an order in which the person will choose weapons, armor and explosives.</p>
+<p>EQUIPMENT</p>
+<p>Restore default sequence.</p>
+<p></p>
+<h3>EVICT</h3>
+<p>EVICT 123</p>
+<p>Evict a person from object. Person must own object to EVICT other persons. 
+  Person in team can't be evicted; evict team leader instead.</p>
+<h3>GIVE<br>
+</h3>
+<p>GIVE [person] [amount] [item]<br>
+  GIVE 123 10 &quot;rats&quot;<br>
+  GIVE 123 ALL &quot;rats&quot;<br>
+</p>
+<p>Give a given amount of given items to other person.</p>
+<p>If person is belonging to other faction, this faction must be at least friendly 
+  to yours.</p>
+<p>If 0 is given as person number, the items will be thrown to Junk.</p>
+<h3></h3>
+<h3>GREEDY</h3>
+<p>GREEDY 0<br>
+  GREEDY 1</p>
+<p>&quot;Do not share food and burnable items&quot;. Person with GREEDY flag will 
+  not allow other persons to borrow his food and burnables. GIVE orders are not 
+  affected by this flag and will be executed as usual.</p>
+<h3></h3>
+<h3>HIDE</h3>
+<p>HIDE NONE<br>
+</p>
+<p>Do not hide faction for this person.</p>
+<p>HIDE FACTION</p>
+<p>Hide faction.</p>
+<h3>INSTALL</h3>
+<p>INSTALL &quot;car details&quot; &quot;engine&quot;</p>
+<p class="cmddesc">Order for leader, full-turn.</p>
+<p>Continue building of the object, installing needed components. Person must 
+  be inside object. Components of multiple types may be installed, but all those 
+  components must have same install skill.</p>
+<h3>KICK</h3>
+<p>KICK</p>
+<p>Throw a person away from faction. Chosen One can't be kicked.</p>
+<h3>LEAVE</h3>
+<p>LEAVE</p>
+<p><span class="cmddesc">Order for leader.</span><br>
+</p>
+<p>Leave object which person is currently in. </p>
+<!--<h3>MAINTAIN</h3>
+<p>MAINTAIN</p>
+<p class="cmddesc">Команда для лидера, на полный месяц.</p>
+<p>Поддерживать объект в рабочем состоянии. Персонаж должен находиться внутри 
+  объекта.</p>-->
+<h3>MOVE</h3>
+<p>MOVE [list of directions]<br>
+  MOVE ATTACK [list of directions]<br>
+</p>
+<p class="cmddesc">Order for leader, full-turn.</p>
+<p>Walk in given directions. If more than one direction supplied, person will 
+  try to move as far as he can. </p>
+<p>Following directions used: </p>
+<p>N, NW, SW, S, SE, NE (example: MOVE N).<br>
+  Number of object to enter (example: MOVE 12).<br>
+  OUT, if you want to leave object (example: MOVE OUT).<br>
+</p>
+<p>If ATTACK directive supplied, person will attack patrols trying to block his 
+  way.</p>
+<h3>NAME</h3>
+<p>NAME PERSON &quot;name&quot;<br>
+  NAME FACTION &quot;name&quot;<br>
+  NAME OBJECT &quot;name&quot;<br>
+</p>
+<p>Change the name. To rename an object, person must be its owner, that is be 
+  first person inside it.</p>
+<h3>OPTION</h3>
+<p>OPTION xml-report [1 | 0]</p>
+<p>Include XML version in turn report. Default is 1. XML version is required for 
+  report viewer application.</p>
+<p>OPTION text-report [1 | 0]</p>
+<p>Include text version in turn report. Default is 1.</p>
+<p>OPTION language [ru | en]</p>
+<p>Change turn report language.</p>
+<p>OPTION template [long | short]</p>
+<p>Show or hide extra comments in orders template. Default is Short.</p>
+<h3>PASSWORD</h3>
+<p>PASSWORD &quot;new password&quot;<br>
+  <br>
+  Change faction password, which is appearing in first line of orders (#orders 
+  ...).</p>
+<p>Important note: password will be changed in next turn only. Orders, in which 
+  the password is changed, must be sent under old password. If you desired to 
+  change your orders after you sent the message with password change, but before 
+  next turn, you must also use old password.</p>
+<h3>PATROL</h3>
+<p>PATROL</p>
+<p class="cmddesc">Order for leader, full-turn.</p>
+<p>Patrol the region. Patrols will when possible participate in all battles when 
+  persons from their faction or allied factions is attacked. Also, they will block 
+  the entry to region to unfriendly persons and attack hostile persons on sight.</p>
+<h3>PRODUCE</h3>
+<p>PRODUCE &quot;rats&quot;</p>
+<p class="cmddesc">Order for leader, full-turn.</p>
+<p>Produce given items.</p>
+<h3>QUIT</h3>
+<p>QUIT &quot;password&quot;<br>
+</p>
+<p>Quit the game. After this order is issued, your Chosen will commit suicide, 
+  and all persons of faction will be dismissed. You must supply your password 
+  as parameter for the order - that offers some extra protection against undesired 
+  issuing. </p>
+<h3>SCAVENGE </h3>
+<p>SCAVENGE<br>
+  SCAVENGE &quot;cans&quot; &quot;metal constructions&quot; ...<br>
+</p>
+<p class="cmddesc">Order for leader, full-turn.</p>
+<p>Take some items from Junk. For each level of scavenge skill person can take 
+  one any item. Many types of items may be taken in single action. If order is 
+  supplied without parameters, person will try to take all items in Junk.</p>
+<h3>SHOW</h3>
+<p>SHOW SKILL &quot;scavenge&quot;<br>
+  SHOW ITEM &quot;rat&quot;<br>
+  SHOW OBJECT &quot;Tank&quot;<br>
+</p>
+<p>Include in turn report full description of given object, item or skill.</p>
+<h3>SPOILS</h3>
+<p>SPOILS &quot;dead rats&quot; &quot;meat&quot;</p>
+<p>Set person's preferences for spoils. You may set muliple item types, but only 
+  one item type from the list will be actually taken.</p>
+<p>SPOILS</p>
+<p>Allow person to choose spoils as he like.</p>
+<h3>TEAM</h3>
+<p>TEAM 123</p>
+<p>Join the team of given leader. If given person is a part of other faction, 
+  that faction must be at leat Friendly to yours. If a person receiving this order 
+  has a team of his own, all his team also comes to other leader. If target person 
+  is a subordinate of other leader, he will automatically leave his team.</p>
+<p>TEAM (or TEAM NONE)</p>
+<p>Leave team. If the order is given to leader, his team will be dismissed.</p>
+<p>TEAM KICK 123</p>
+<p class="cmddesc">Order for leader.</p>
+<p></p>
+<p>Kick given person from team.</p>
+<h3>TRADE </h3>
+<p>TRADE 5 &quot;rats&quot; 1 &quot;ration&quot;</p>
+<p>Offer 5 rats in exchange for 1 ration. Offer is valid for any person in region.</p>
+<p>TRADE WITH 123 5 &quot;rats&quot; 1 &quot;ration&quot;</p>
+<p>Offer this deal to specific person.</p>
+<p>This order is not full-turn, but person may receive only one TRADE order per 
+  turn. </p>
+<h3>UNINSTALL</h3>
+<p class="cmddesc">Order for leader, full-turn.</p>
+<p>Uninstall given components from object. Person must be inside object; a person 
+  from same faction must own object. </p>
+<p>UNINSTALL &quot;car details&quot; &quot;engine&quot;</p>
+<p>In this form, person will attempt to uninstall maximal amount of all given 
+  component types. Multiple component types may be given, but all of them must 
+  require same install skill.</p>
+<p>UNINSTALL 10 &quot;car details&quot;</p>
+<p>In this form, a person will uninstall given amount of certain component; only 
+  one component type should be given.</p>
+<h3></h3>
+<h2>Order of processing</h2>
+<p>Orders are processed in following sequence:</p>
+<ul>
+  <li>Setup orders: ADDRESS, AVOID, EQUIPMENT, BURN, CONSUME, DESCRIBE, GREEDY, 
+    NAME, OPTION, PASSWORD,QUIT, SHOW, SPOILS</li>
+  <li>ATTACK (and automatic attacks on hostile persons)</li>
+  <li>Instant orders: DECLARE, TEAM, LEAVE, ENTER, EVICT, HIDE, KICK</li>
+  <li>TRADE, GIVE</li>
+  <li>Full-turn orders: BUILD, CURE, INSTALL, PATROL, MOVE, DRIVE, PRODUCE, SCAVENGE, 
+    UNINSTALL</li>
+  <li>Maintenance</li>
+  <li>Cold and radiation</li>
+  <li>Baby-births and baby-making</li>
+  <li>Insane persons leaves faction</li>
+</ul>
+</body>
+</html>

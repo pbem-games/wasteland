@@ -1,0 +1,37 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wasteland", "Wasteland.csproj", "{5238EEBD-A970-4C6A-B188-480B5AB937AE}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailManager", "_MailManager1\MailManager.csproj", "{2DED5EA7-7C6B-4D96-8AC9-45ECB358E034}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapCreator", "_MapCreator\MapCreator.csproj", "{9576F315-A8E7-49F9-9640-5EACCF43FF92}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{5238EEBD-A970-4C6A-B188-480B5AB937AE}.Debug.ActiveCfg = Debug|.NET
+		{5238EEBD-A970-4C6A-B188-480B5AB937AE}.Debug.Build.0 = Debug|.NET
+		{5238EEBD-A970-4C6A-B188-480B5AB937AE}.Release.ActiveCfg = Release|.NET
+		{5238EEBD-A970-4C6A-B188-480B5AB937AE}.Release.Build.0 = Release|.NET
+		{2DED5EA7-7C6B-4D96-8AC9-45ECB358E034}.Debug.ActiveCfg = Debug|.NET
+		{2DED5EA7-7C6B-4D96-8AC9-45ECB358E034}.Debug.Build.0 = Debug|.NET
+		{2DED5EA7-7C6B-4D96-8AC9-45ECB358E034}.Release.ActiveCfg = Release|.NET
+		{2DED5EA7-7C6B-4D96-8AC9-45ECB358E034}.Release.Build.0 = Release|.NET
+		{9576F315-A8E7-49F9-9640-5EACCF43FF92}.Debug.ActiveCfg = Debug|.NET
+		{9576F315-A8E7-49F9-9640-5EACCF43FF92}.Debug.Build.0 = Debug|.NET
+		{9576F315-A8E7-49F9-9640-5EACCF43FF92}.Release.ActiveCfg = Release|.NET
+		{9576F315-A8E7-49F9-9640-5EACCF43FF92}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

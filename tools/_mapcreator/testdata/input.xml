@@ -1,0 +1,1400 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<data>
+	<terrain type="W">
+		<num-attribute name="radiation" min="30" max="70"/>
+		<resource type="WEED">
+			<num-attribute name="amount" min="50" max="100"/>
+		</resource>
+		<resource type="RAT">
+			<num-attribute name="amount" min="200" max="500"/>
+		</resource>
+		<group>
+			<or chance="10">
+				<resource type="NITR">
+					<num-attribute name="amount" min="10" max="50"/>
+				</resource>
+			</or>
+		</group>
+		<junk type="BODY">
+			<num-attribute name="amount" min="1" max="50"/>
+		</junk>
+		<group>
+			<or chance="20">
+				<junk type="WOOD">
+					<num-attribute name="amount" min="1" max="50"/>
+				</junk>
+			</or>
+		</group>
+	</terrain>
+	<terrain type="F">
+		<num-attribute name="radiation" min="50" max="120"/>
+		<resource type="WOOD">
+			<num-attribute name="amount" min="10" max="200"/>
+		</resource>
+		<resource type="MUSH">
+			<num-attribute name="amount" min="50" max="400"/>
+		</resource>
+		<group>
+			<or chance="10">
+				<resource type="WEED">
+					<num-attribute name="amount" min="10" max="50"/>
+				</resource>
+			</or>
+		</group>
+		<junk type="BODY">
+			<num-attribute name="amount" min="1" max="50"/>
+		</junk>
+		<group>
+			<or chance="10">
+				<junk type="WOOD">
+					<num-attribute name="amount" min="1" max="50"/>
+				</junk>
+			</or>
+			<or chance="10">
+				<junk type="MEAT">
+					<num-attribute name="amount" min="1" max="50"/>
+				</junk>
+			</or>
+			<or chance="5">
+				<junk type="12GC">
+					<num-attribute name="amount" min="1" max="10"/>
+				</junk>
+			</or>
+			<or chance="5">
+				<junk type="556C">
+					<num-attribute name="amount" min="1" max="10"/>
+				</junk>
+			</or>
+			<or chance="5">
+				<junk type="CAN">
+					<num-attribute name="amount" min="1" max="10"/>
+				</junk>
+			</or>
+		</group>
+	</terrain>
+	<terrain type="R">
+		<num-attribute name="radiation" min="70" max="120"/>
+		<resource type="RAT">
+			<num-attribute name="amount" min="150" max="300"/>
+		</resource>
+		<group>
+			<or chance="10">
+				<resource type="WEED">
+					<num-attribute name="amount" min="10" max="50"/>
+				</resource>
+			</or>
+			<or chance="10">
+				<resource type="NITR">
+					<num-attribute name="amount" min="10" max="50"/>
+				</resource>
+			</or>
+		</group>
+		<junk type="BLOC">
+			<num-attribute name="amount" min="10" max="30"/>
+		</junk>
+		<junk type="CONS">
+			<num-attribute name="amount" min="1" max="20"/>
+		</junk>
+		<junk type="DETA">
+			<num-attribute name="amount" min="1" max="30"/>
+		</junk>
+		<junk type="BODY">
+			<num-attribute name="amount" min="50" max="200"/>
+		</junk>
+		<junk type="FURN">
+			<num-attribute name="amount" min="10" max="200"/>
+		</junk>
+		<group>
+			<or chance="50">
+				<junk type="BOOK">
+					<num-attribute name="amount" min="10" max="500"/>
+				</junk>
+			</or>
+		</group>
+		<group>
+			<or chance="50">
+				<junk type="ROUB">
+					<num-attribute name="amount" min="10" max="500"/>
+				</junk>
+			</or>
+		</group>
+		<group>
+			<or chance="50">
+				<junk type="CAN">
+					<num-attribute name="amount" min="10" max="200"/>
+				</junk>
+			</or>
+		</group>
+		<group>
+			<or chance="20">
+				<junk type="MEDI">
+					<num-attribute name="amount" min="10" max="200"/>
+				</junk>
+			</or>
+		</group>
+		<group>
+			<or chance="20">
+				<junk type="GAS">
+					<num-attribute name="amount" min="2" max="20"/>
+				</junk>
+			</or>
+		</group>
+		<group>
+			<or chance="5">
+				<junk type="12GC">
+					<num-attribute name="amount" min="1" max="50"/>
+				</junk>
+			</or>
+		</group>
+		<group>
+			<or chance="5">
+				<junk type="556C">
+					<num-attribute name="amount" min="1" max="30"/>
+				</junk>
+			</or>
+		</group>
+		<group>
+			<or chance="20">
+				<junk type="900C">
+					<num-attribute name="amount" min="1" max="50"/>
+				</junk>
+			</or>
+		</group>
+		<group>
+			<or chance="10">
+				<junk type="762C">
+					<num-attribute name="amount" min="1" max="20"/>
+				</junk>
+			</or>
+		</group>
+		<group>
+			<or chance="1">
+				<junk type="127C">
+					<num-attribute name="amount" min="1" max="5"/>
+				</junk>
+			</or>
+		</group>
+		<group>
+			<or chance="5">
+				<junk type="12GA">
+					<num-attribute name="amount" min="1" max="20"/>
+				</junk>
+			</or>
+		</group>
+		<group>
+			<or chance="5">
+				<junk type="556A">
+					<num-attribute name="amount" min="1" max="10"/>
+				</junk>
+			</or>
+		</group>
+		<group>
+			<or chance="5">
+				<junk type="900A">
+					<num-attribute name="amount" min="1" max="20"/>
+				</junk>
+			</or>
+		</group>
+		<group>
+			<or chance="5">
+				<junk type="762A">
+					<num-attribute name="amount" min="1" max="10"/>
+				</junk>
+			</or>
+		</group>
+		<group>
+			<or chance="5">
+				<junk type="127A">
+					<num-attribute name="amount" min="1" max="2"/>
+				</junk>
+			</or>
+		</group>
+		<group>
+			<or chance="2">
+				<junk type="PM" amount="1"/>
+			</or>
+		</group>
+		<group>
+			<or chance="2">
+				<junk type="RIFL" amount="1"/>
+			</or>
+		</group>
+		<group>
+			<or chance="2">
+				<junk type="GGUN" amount="1"/>
+			</or>
+		</group>
+		<group>
+			<or chance="10">
+				<junk type="LJAC" amount="1"/>
+			</or>
+		</group>
+		<group>
+			<or chance="10">
+				<junk type="LCOA" amount="1"/>
+			</or>
+		</group>
+		<group>
+			<or chance="10">
+				<junk type="CJAC" amount="1"/>
+			</or>
+		</group>
+	</terrain>
+	<terrain type="G">
+		<num-attribute name="radiation" min="100" max="200"/>
+		<resource type="RAT">
+			<num-attribute name="amount" min="50" max="500"/>
+		</resource>
+		<group>
+			<or chance="10">
+				<resource type="NITR">
+					<num-attribute name="amount" min="10" max="50"/>
+				</resource>
+			</or>
+		</group>
+		<group>
+			<or chance="10">
+				<junk type="WOOD">
+					<num-attribute name="amount" min="1" max="50"/>
+				</junk>
+			</or>
+		</group>
+		<group>
+			<or chance="10">
+				<junk type="GASM">
+					<num-attribute name="amount" min="1" max="3"/>
+				</junk>
+			</or>
+		</group>
+		<group>
+			<or chance="10">
+				<junk type="CJAC" amount="1"/>
+			</or>
+		</group>
+	</terrain>
+	<terrain type="g">
+		<num-attribute name="radiation" min="120" max="300"/>
+		<resource type="RAT">
+			<num-attribute name="amount" min="150" max="300"/>
+		</resource>
+		<group>
+			<or chance="10">
+				<resource type="NITR">
+					<num-attribute name="amount" min="10" max="50"/>
+				</resource>
+			</or>
+		</group>
+		<junk type="BLOC">
+			<num-attribute name="amount" min="10" max="50"/>
+		</junk>
+		<junk type="CONS">
+			<num-attribute name="amount" min="1" max="50"/>
+		</junk>
+		<junk type="DETA">
+			<num-attribute name="amount" min="1" max="50"/>
+		</junk>
+		<junk type="BODY">
+			<num-attribute name="amount" min="50" max="200"/>
+		</junk>
+		<junk type="FURN">
+			<num-attribute name="amount" min="10" max="200"/>
+		</junk>
+		<junk type="GASM">
+			<num-attribute name="amount" min="1" max="3"/>
+		</junk>
+		<group>
+			<or chance="20">
+				<junk type="CAN">
+					<num-attribute name="amount" min="10" max="200"/>
+				</junk>
+			</or>
+		</group>
+		<group>
+			<or chance="20">
+				<junk type="MEDI">
+					<num-attribute name="amount" min="10" max="200"/>
+				</junk>
+			</or>
+		</group>
+		<group>
+			<or chance="15">
+				<junk type="12GC">
+					<num-attribute name="amount" min="1" max="50"/>
+				</junk>
+			</or>
+		</group>
+		<group>
+			<or chance="15">
+				<junk type="556C">
+					<num-attribute name="amount" min="1" max="50"/>
+				</junk>
+			</or>
+		</group>
+		<group>
+			<or chance="30">
+				<junk type="900C">
+					<num-attribute name="amount" min="1" max="50"/>
+				</junk>
+			</or>
+		</group>
+		<group>
+			<or chance="20">
+				<junk type="762C">
+					<num-attribute name="amount" min="1" max="50"/>
+				</junk>
+			</or>
+		</group>
+		<junk type="127C">
+			<num-attribute name="amount" min="1" max="20"/>
+		</junk>
+		<group>
+			<or chance="15">
+				<junk type="12GA">
+					<num-attribute name="amount" min="1" max="20"/>
+				</junk>
+			</or>
+		</group>
+		<group>
+			<or chance="15">
+				<junk type="556A">
+					<num-attribute name="amount" min="1" max="20"/>
+				</junk>
+			</or>
+		</group>
+		<group>
+			<or chance="15">
+				<junk type="900A">
+					<num-attribute name="amount" min="1" max="20"/>
+				</junk>
+			</or>
+		</group>
+		<group>
+			<or chance="15">
+				<junk type="762A">
+					<num-attribute name="amount" min="1" max="20"/>
+				</junk>
+			</or>
+		</group>
+		<group>
+			<or chance="15">
+				<junk type="127A">
+					<num-attribute name="amount" min="1" max="20"/>
+				</junk>
+			</or>
+		</group>
+		<group>
+			<or chance="12">
+				<junk type="PM" amount="1"/>
+			</or>
+		</group>
+		<group>
+			<or chance="12">
+				<junk type="RIFL" amount="1"/>
+			</or>
+		</group>
+		<group>
+			<or chance="12">
+				<junk type="GGUN" amount="1"/>
+			</or>
+		</group>
+	</terrain>
+	<terrain type="C">
+		<num-attribute name="radiation" min="300" max="500"/>
+		<junk type="BLOC">
+			<num-attribute name="amount" min="10" max="30"/>
+		</junk>
+		<junk type="CONS">
+			<num-attribute name="amount" min="1" max="20"/>
+		</junk>
+		<junk type="DETA">
+			<num-attribute name="amount" min="1" max="30"/>
+		</junk>
+		<group>
+			<or chance="5">
+				<junk type="12GC">
+					<num-attribute name="amount" min="1" max="50"/>
+				</junk>
+			</or>
+		</group>
+		<junk type="556C">
+			<num-attribute name="amount" min="50" max="100"/>
+		</junk>
+		<junk type="900C">
+			<num-attribute name="amount" min="50" max="100"/>
+		</junk>
+		<junk type="762C">
+			<num-attribute name="amount" min="50" max="100"/>
+		</junk>
+		<group>
+			<or chance="5">
+				<junk type="127C">
+					<num-attribute name="amount" min="1" max="20"/>
+				</junk>
+			</or>
+		</group>
+		<group>
+			<or chance="5">
+				<junk type="12GA">
+					<num-attribute name="amount" min="1" max="20"/>
+				</junk>
+			</or>
+		</group>
+		<group>
+			<or chance="5">
+				<junk type="556A">
+					<num-attribute name="amount" min="1" max="20"/>
+				</junk>
+			</or>
+		</group>
+		<group>
+			<or chance="5">
+				<junk type="900A">
+					<num-attribute name="amount" min="1" max="20"/>
+				</junk>
+			</or>
+		</group>
+		<group>
+			<or chance="5">
+				<junk type="762A">
+					<num-attribute name="amount" min="1" max="20"/>
+				</junk>
+			</or>
+		</group>
+		<junk type="127A">
+			<num-attribute name="amount" min="1" max="20"/>
+		</junk>
+		<group>
+			<or chance="2">
+				<junk type="PM" amount="1"/>
+			</or>
+		</group>
+		<group>
+			<or chance="2">
+				<junk type="RIFL" amount="1"/>
+			</or>
+		</group>
+		<group>
+			<or chance="2">
+				<junk type="GGUN" amount="1"/>
+			</or>
+		</group>
+	</terrain>
+	<terrain type="w">
+		<num-attribute name="radiation" min="700" max="700"/>
+	</terrain>
+	
+	
+	<!-- Persons -->
+
+	<person type="soldier" amount="7" name-group="ru">
+		<terrain type="W" chance="10"/>
+		<terrain type="F" chance="30"/>
+		<terrain type="R" chance="50"/>
+		<terrain type="G" chance="5"/>
+		<terrain type="g" chance="5"/>
+		<item type="MAN" amount="1"/>
+		<item type="KNIF" amount="1"/>
+		<attribute name="age" value="200"/>
+		<group>
+			<or chance="60">
+				<item type="AKM" amount="1"/>
+				<item type="762A">
+					<num-attribute name="amount" min="30" max="90"/>
+				</item>
+			</or>
+			<or chance="10">
+				<item type="AK101" amount="1"/>
+				<item type="556A">
+					<num-attribute name="amount" min="30" max="90"/>
+				</item>
+			</or>
+		</group>
+		<item type="AUNI" amount="1"/>
+		<group>
+			<or chance="50">
+				<item type="CJAC" amount="1"/>
+			</or>
+		</group>
+		<group>
+			<or chance="20">
+				<item type="BJAC" amount="1"/>
+			</or>
+		</group>
+		<group>
+			<or chance="30">
+				<item type="GASM" amount="1"/>
+			</or>
+		</group>
+		<group>
+			<or chance="30">
+				<item type="CAN">
+					<num-attribute name="amount" min="1" max="10"/>
+				</item>
+			</or>
+		</group>
+		<skill type="REFL" level="50"/>
+		<skill type="RANG" level="50"/>
+		<skill type="MELE" level="10"/>
+		<group>
+			<or chance="50">
+				<skill type="DRIV" level="50"/>
+				<group>
+					<or chance="10">
+						<skill type="MECH">
+							<num-attribute name="level" min="1" max="50"/>
+						</skill>
+					</or>
+				</group>
+			</or>
+			<or chance="20">
+				<skill type="SCAV" level="50"/>
+			</or>
+			<or chance="30">
+				<skill type="SURV" level="100"/>
+				<skill type="FARM" level="10"/>
+				<skill type="HUNT" level="10"/>
+				<skill type="WOOD" level="10"/>
+			</or>
+		</group>
+	</person>
+	
+	<person type="city militioner" amount="3" name-group="ru">
+		<terrain type="W" chance="15"/>
+		<terrain type="F" chance="13"/>
+		<terrain type="R" chance="70"/>
+		<terrain type="G" chance="1"/>
+		<terrain type="g" chance="1"/>
+		<attribute name="age" value="200"/>
+		<group>
+			<or chance="95"><item type="MAN" amount="1"/></or>
+			<or chance="5"><item type="WOMA" amount="1"/></or>
+		</group>
+		<group>
+			<or chance="80">
+				<item type="PM" amount="1"/>
+				<item type="900A">
+					<num-attribute name="amount" min="9" max="18"/>
+				</item>
+			</or>
+			<or chance="5">
+				<item type="AKM" amount="1"/>
+				<item type="762A">
+					<num-attribute name="amount" min="1" max="60"/>
+				</item>
+			</or>
+			<or chance="5">
+				<item type="APS" amount="1"/>
+				<item type="900A">
+					<num-attribute name="amount" min="9" max="18"/>
+				</item>
+			</or>
+		</group>
+		<item type="PUNI" amount="1"/>
+		<item type="CAN">
+			<num-attribute name="amount" min="1" max="9"/>
+		</item>
+		<group>
+			<or chance="20">
+				<item type="BJAC" amount="1"/>
+			</or>
+		</group>
+		<skill type="REFL" level="20"/>
+		<skill type="RANG" level="20"/>
+		<group>
+			<or chance="50">
+				<skill type="DRIV" level="50"/>
+				<skill type="MECH" level="10"/>
+			</or>
+			<or chance="30">
+				<skill type="COOK" level="50"/>
+				<skill type="CHEM" level="10"/>
+			</or>
+			<or chance="20">
+				<skill type="SCAV" level="50"/>
+				<skill type="GUNS" level="10"/>
+			</or>
+		</group>
+	</person>
+	
+	<person type="swat" amount="1" name-group="ru">
+		<terrain type="W" chance="15"/>
+		<terrain type="F" chance="5"/>
+		<terrain type="R" chance="40"/>
+		<terrain type="G" chance="20"/>
+		<terrain type="g" chance="20"/>
+		<attribute name="age" value="200"/>
+		<group>
+			<or chance="95"><item type="MAN" amount="1"/></or>
+			<or chance="5"><item type="WOMA" amount="1"/></or>
+		</group>
+		<item type="KNIF" amount="1"/>
+		<group>
+			<or chance="80">
+				<item type="AKM" amount="1"/>
+				<item type="762A">
+					<num-attribute name="amount" min="30" max="90"/>
+				</item>
+			</or>
+			<or chance="20">
+				<item type="AK101" amount="1"/>
+				<item type="556A">
+					<num-attribute name="amount" min="30" max="90"/>
+				</item>
+			</or>
+		</group>
+		<item type="SWAT" amount="1"/>
+		<item type="CAN">
+			<num-attribute name="amount" min="3" max="9"/>
+		</item>
+		<skill type="REFL" level="80"/>
+		<skill type="RANG" level="60"/>
+		<skill type="MELE" level="60"/>
+		<group>
+			<or chance="50">
+				<skill type="DRIV" level="50"/>
+				<skill type="MECH" level="10"/>
+			</or>
+			<or chance="30">
+				<skill type="COOK" level="50"/>
+				<skill type="CHEM" level="10"/>
+			</or>
+			<or chance="20">
+				<skill type="SCAV" level="50"/>
+				<skill type="GUNS" level="10"/>
+			</or>
+		</group>
+	</person>
+	
+	<person type="road patrol" amount="1" name-group="ru">
+		<terrain type="W" chance="70"/>
+		<terrain type="R" chance="28"/>
+		<terrain type="G" chance="1"/>
+		<terrain type="g" chance="1"/>
+		<attribute name="age" value="200"/>
+		<group>
+			<or chance="95"><item type="MAN" amount="1"/></or>
+			<or chance="5"><item type="WOMA" amount="1"/></or>
+		</group>
+		<group>
+			<or chance="80">
+				<item type="PM" amount="1"/>
+				<item type="900A">
+					<num-attribute name="amount" min="9" max="18"/>
+				</item>
+			</or>
+			<or chance="5">
+				<item type="AKM" amount="1"/>
+				<item type="762A">
+					<num-attribute name="amount" min="1" max="60"/>
+				</item>
+			</or>
+			<or chance="5">
+				<item type="APS" amount="1"/>
+				<item type="900A">
+					<num-attribute name="amount" min="9" max="18"/>
+				</item>
+			</or>
+		</group>
+		<item type="PUNI" amount="1"/>
+		<item type="PJAC" amount="1"/>
+		<item type="CAN">
+			<num-attribute name="amount" min="1" max="9"/>
+		</item>
+		<group>
+			<or chance="20">
+				<item type="BJAC" amount="1"/>
+			</or>
+		</group>
+		<skill type="REFL" level="10"/>
+		<skill type="RANG" level="10"/>
+		<group>
+			<or chance="50">
+				<skill type="DRIV" level="80"/>
+			</or>
+			<or chance="10">
+				<skill type="COOK" level="50"/>
+			</or>
+			<or chance="20">
+				<skill type="SCAV" level="50"/>
+			</or>
+			<or chance="20">
+				<skill type="SURV" level="100"/>
+				<skill type="FARM" level="10"/>
+				<skill type="HUNT" level="10"/>
+				<skill type="WOOD" level="10"/>
+			</or>
+		</group>
+	</person>
+	
+	<person type="bandit" amount="3" name-group="ru">
+		<terrain type="W" chance="20"/>
+		<terrain type="F" chance="28"/>
+		<terrain type="R" chance="50"/>
+		<terrain type="G" chance="1"/>
+		<terrain type="g" chance="1"/>
+		<attribute name="age" value="200"/>
+		<group>
+			<or chance="95"><item type="MAN" amount="1"/></or>
+			<or chance="5"><item type="WOMA" amount="1"/></or>
+		</group>
+		<group>
+			<or chance="30">
+				<item type="PM" amount="1"/>
+				<item type="900A">
+					<num-attribute name="amount" min="9" max="18"/>
+				</item>
+			</or>
+			<or chance="10">
+				<item type="SSHO" amount="1"/>
+				<item type="12GA">
+					<num-attribute name="amount" min="2" max="8"/>
+				</item>
+			</or>
+			<or chance="40">
+				<item type="KNIF" amount="1"/>
+			</or>
+			<or chance="10">
+				<item type="RGGU" amount="1"/>
+				<item type="900A">
+					<num-attribute name="amount" min="9" max="18"/>
+				</item>
+			</or>
+		</group>
+		<group>
+			<or chance="50">
+				<item type="LJAC" amount="1"/>
+			</or>
+			<or chance="30">
+				<item type="LCOA" amount="1"/>
+			</or>
+			<or chance="10">
+				<item type="QJAC" amount="1"/>
+			</or>
+		</group>
+		<item type="CAN">
+			<num-attribute name="amount" min="3" max="9"/>
+		</item>
+		<group>
+			<or chance="30">
+				<item type="ROUB">
+					<num-attribute name="amount" min="1" max="10"/>
+				</item>
+			</or>
+		</group>
+		<skill type="REFL" level="80"/>
+		<skill type="RANG" level="20"/>
+		<skill type="MELE" level="20"/>
+		<group>
+			<or chance="50">
+				<skill type="DRIV" level="80"/>
+			</or>
+			<or chance="30">
+				<skill type="SCAV" level="50"/>
+			</or>
+			<or chance="20">
+				<skill type="SURV" level="100"/>
+				<skill type="FARM" level="10"/>
+				<skill type="HUNT" level="10"/>
+				<skill type="WOOD" level="10"/>
+			</or>
+		</group>
+	</person>
+	
+	<person type="hunter" amount="2">
+		<terrain type="W" chance="38"/>
+		<terrain type="F" chance="50"/>
+		<terrain type="R" chance="10"/>
+		<terrain type="G" chance="1"/>
+		<terrain type="g" chance="1"/>
+		<attribute name="age" value="200"/>
+		<group>
+			<or chance="95"><item type="MAN" amount="1"/></or>
+			<or chance="5"><item type="WOMA" amount="1"/></or>
+		</group>
+		<group>
+			<or chance="50">
+				<item type="RIFL" amount="1"/>
+				<item type="556A">
+					<num-attribute name="amount" min="9" max="18"/>
+				</item>
+			</or>
+			<or chance="50">
+				<item type="SHOT" amount="1"/>
+				<item type="12GA">
+					<num-attribute name="amount" min="9" max="18"/>
+				</item>
+			</or>
+		</group>
+		<item type="CJAC" amount="1"/>
+		<item type="ROAS">
+			<num-attribute name="amount" min="10" max="30"/>
+		</item>
+		<skill type="SURV" level="100"/>
+		<skill type="FARM" level="0"/>
+		<skill type="HUNT" level="60"/>
+		<skill type="WOOD" level="10"/>
+		<group>
+			<or chance="50">
+				<skill type="DRIV" level="80"/>
+				<group>
+					<or chance="20">
+						<skill type="MECH" level="80"/>
+					</or>
+				</group>
+			</or>
+			<or chance="30">
+				<skill type="SCAV" level="50"/>
+			</or>
+			<or chance="20">
+				<skill type="REFL" level="10"/>
+				<skill type="RANG" level="10"/>
+			</or>
+		</group>
+	</person>
+	
+	<person type="girl" amount="5" name-group="ru">
+		<terrain type="W" chance="20"/>
+		<terrain type="R" chance="80"/>
+		<attribute name="age" value="200"/>
+		<item type="WOMA" amount="1"/>
+		<group>
+			<or chance="20">
+				<item type="GGUN" amount="1"/>
+				<item type="GCAR">
+					<num-attribute name="amount" min="1" max="5"/>
+				</item>
+			</or>
+		</group>
+		<item type="FCOA" amount="1"/>
+		<skill type="COOK" level="50"/>
+		<group>
+			<or chance="50">
+				<skill type="DOC" level="80"/>
+			</or>
+		</group>
+		<group>
+			<or chance="80">
+				<skill type="DRIV" level="80"/>
+			</or>
+			<or chance="20">
+				<skill type="REFL" level="70"/>
+			</or>
+		</group>
+	</person>
+	
+	<person type="peasant" amount="9">
+		<terrain type="W" chance="60"/>
+		<terrain type="F" chance="20"/>
+		<terrain type="R" chance="20"/>
+		<attribute name="age" value="200"/>
+		<group>
+			<or chance="50"><item type="MAN" amount="1"/></or>
+			<or chance="50"><item type="WOMA" amount="1"/></or>
+		</group>
+		<group>
+			<or chance="5">
+				<item type="RIFL" amount="1"/>
+				<item type="556A">
+					<num-attribute name="amount" min="9" max="18"/>
+				</item>
+			</or>
+			<or chance="5">
+				<item type="SHOT" amount="1"/>
+				<item type="12GA">
+					<num-attribute name="amount" min="9" max="18"/>
+				</item>
+			</or>
+			<or chance="10">
+				<item type="KNIF" amount="1"/>
+			</or>
+			<or chance="5">
+				<item type="CHAI" amount="1"/>
+			</or>
+		</group>
+		<group>
+			<or chance="10">
+				<item type="CJAC" amount="1"/>
+			</or>
+			<or chance="10">
+				<item type="QJAC" amount="1"/>
+			</or>
+			<or chance="10">
+				<item type="SWEA" amount="1"/>
+			</or>
+		</group>
+		<item type="DMUS">
+			<num-attribute name="amount" min="30" max="100"/>
+		</item>
+		<skill type="SURV" level="100"/>
+		<skill type="FARM">
+			<num-attribute name="level" min="1" max="100"/>
+		</skill>
+		<skill type="HUNT">
+			<num-attribute name="level" min="1" max="100"/>
+		</skill>
+		<skill type="WOOD">
+			<num-attribute name="level" min="1" max="100"/>
+		</skill>
+		<group>
+			<or chance="20">
+				<skill type="DRIV">
+					<num-attribute name="level" min="1" max="100"/>
+				</skill>
+				<group>
+					<or chance="20">
+						<skill type="MECH">
+							<num-attribute name="level" min="1" max="100"/>
+						</skill>
+					</or>
+				</group>
+			</or>
+			<or chance="20">
+				<skill type="SCAV">
+					<num-attribute name="level" min="1" max="100"/>
+				</skill>
+			</or>
+			<or chance="20">
+				<skill type="REFL">
+					<num-attribute name="level" min="1" max="100"/>
+				</skill>
+			</or>
+			<or chance="20">
+				<skill type="COOK">
+					<num-attribute name="level" min="1" max="100"/>
+				</skill>
+				<group>
+					<or chance="20">
+						<skill type="DOC">
+							<num-attribute name="level" min="1" max="100"/>
+						</skill>
+					</or>
+				</group>
+			</or>
+			<or chance="20">
+				<skill type="BUIL">
+					<num-attribute name="level" min="1" max="100"/>
+				</skill>
+			</or>
+		</group>
+	</person>
+	
+	<person type="cityman" amount="7">
+		<terrain type="W" chance="13"/>
+		<terrain type="F" chance="5"/>
+		<terrain type="R" chance="80"/>
+		<terrain type="G" chance="1"/>
+		<terrain type="g" chance="1"/>
+		<attribute name="age" value="200"/>
+		<group>
+			<or chance="50"><item type="MAN" amount="1"/></or>
+			<or chance="50"><item type="WOMA" amount="1"/></or>
+		</group>
+		<group>
+			<or chance="5">
+				<item type="PM" amount="1"/>
+				<item type="900A">
+					<num-attribute name="amount" min="1" max="9"/>
+				</item>
+			</or>
+			<or chance="10">
+				<item type="KNIF" amount="1"/>
+			</or>
+			<or chance="1">
+				<item type="RIFL" amount="1"/>
+				<item type="556A">
+					<num-attribute name="amount" min="9" max="18"/>
+				</item>
+			</or>
+			<or chance="1">
+				<item type="SHOT" amount="1"/>
+				<item type="12GA">
+					<num-attribute name="amount" min="9" max="18"/>
+				</item>
+			</or>
+		</group>
+		<group>
+			<or chance="30">
+				<item type="CAN">
+					<num-attribute name="amount" min="3" max="9"/>
+				</item>
+			</or>
+		</group>
+		<group>
+			<or chance="20">
+				<item type="QJAC" amount="1"/>
+			</or>
+			<or chance="20">
+				<item type="SWEA" amount="1"/>
+			</or>
+			<or chance="10">
+				<item type="FCOA" amount="1"/>
+			</or>
+			<or chance="10">
+				<item type="LJAC" amount="1"/>
+			</or>
+			<or chance="10">
+				<item type="LCOA" amount="1"/>
+			</or>
+		</group>
+		<skill type="SCAV">
+			<num-attribute name="level" min="1" max="100"/>
+		</skill>
+		<group>
+			<or chance="20">
+				<skill type="TAIL">
+					<num-attribute name="level" min="1" max="100"/>
+				</skill>
+			</or>
+			<or chance="20">
+				<skill type="GUNS">
+					<num-attribute name="level" min="1" max="100"/>
+				</skill>
+			</or>
+		</group>
+		<group>
+			<or chance="20">
+				<skill type="DRIV">
+					<num-attribute name="level" min="1" max="100"/>
+				</skill>
+				<group>
+					<or chance="20">
+						<skill type="MECH">
+							<num-attribute name="level" min="1" max="100"/>
+						</skill>
+					</or>
+				</group>
+			</or>
+			<or chance="20">
+				<skill type="SURV" level="100"/>
+				<skill type="FARM">
+					<num-attribute name="level" min="1" max="100"/>
+				</skill>
+				<skill type="HUNT">
+					<num-attribute name="level" min="1" max="100"/>
+				</skill>
+				<skill type="WOOD">
+					<num-attribute name="level" min="1" max="100"/>
+				</skill>
+			</or>
+			<or chance="20">
+				<skill type="REFL">
+					<num-attribute name="level" min="1" max="100"/>
+				</skill>
+			</or>
+			<or chance="20">
+				<skill type="COOK">
+					<num-attribute name="level" min="1" max="100"/>
+				</skill>
+				<group>
+					<or chance="20">
+						<skill type="DOC">
+							<num-attribute name="level" min="1" max="100"/>
+						</skill>
+					</or>
+				</group>
+			</or>
+			<or chance="20">
+				<skill type="BUIL">
+					<num-attribute name="level" min="1" max="100"/>
+				</skill>
+			</or>
+		</group>
+	</person>
+	
+	<person type="child" amount="2">
+		<terrain type="W" chance="40"/>
+		<terrain type="F" chance="5"/>
+		<terrain type="R" chance="55"/>
+		<attribute name="age" value="0"/>
+		<group>
+			<or chance="50"><item type="MAN" amount="1"/></or>
+			<or chance="50"><item type="WOMA" amount="1"/></or>
+		</group>
+		<group>
+			<or chance="50">
+				<item type="SWEA" amount="1"/>
+			</or>
+		</group>
+		<group>
+			<or chance="50">
+				<skill type="SCAV" level="0"/>
+			</or>
+			<or chance="50">
+				<skill type="SURV" level="100"/>
+				<skill type="FARM" level="0"/>
+				<skill type="HUNT" level="0"/>
+				<skill type="WOOD" level="0"/>
+			</or>
+		</group>
+		<group>
+			<or chance="25">
+				<skill type="DRIV" level="0"/>
+			</or>
+			<or chance="25">
+				<skill type="REFL" level="0"/>
+			</or>
+			<or chance="25">
+				<skill type="COOK" level="0"/>
+			</or>
+			<or chance="25">
+				<skill type="BUIL" level="0"/>
+			</or>
+		</group>
+	</person>
+	
+	<!-- Buildings -->
+
+	<building type="car" amount="10">
+		<terrain type="W" chance="20"/>
+		<terrain type="R" chance="70"/>
+		<terrain type="G" chance="5"/>
+		<terrain type="g" chance="5"/>
+		<attribute name="type" value="CAR"/>
+		<group>
+			<or chance="20"><attribute name="name" value="ВАЗ"/></or>
+			<or chance="20"><attribute name="name" value="Нива"/></or>
+			<or chance="10"><attribute name="name" value="ГАЗ"/></or>
+			<or chance="10"><attribute name="name" value="Запорожец"/></or>
+			<or chance="20"><attribute name="name" value="Audi"/></or>
+			<or chance="10"><attribute name="name" value="Ford"/></or>
+			<or chance="10"><attribute name="name" value="Toyota"/></or>
+		</group>
+		<installed type="DETA">
+			<num-attribute name="amount" min="2" max="10"/>
+		</installed>
+		<group>
+			<or chance="20">
+				<installed type="ENGI" amount="1"/>
+			</or>
+		</group>
+	</building>
+	
+	<building type="truck" amount="2">
+		<terrain type="W" chance="40"/>
+		<terrain type="R" chance="50"/>
+		<terrain type="G" chance="5"/>
+		<terrain type="g" chance="5"/>
+		<attribute name="type" value="TRUC"/>
+		<group>
+			<or chance="45"><attribute name="name" value="МАЗ"/></or>
+			<or chance="45"><attribute name="name" value="КамАЗ"/></or>
+			<or chance="10"><attribute name="name" value="БелАЗ"/></or>
+		</group>
+		<installed type="DETA">
+			<num-attribute name="amount" min="5" max="40"/>
+		</installed>
+		<group>
+			<or chance="30">
+				<installed type="ENGI" amount="1"/>
+			</or>
+		</group>
+	</building>
+	
+	<building type="tractor" amount="1">
+		<terrain type="W" chance="70"/>
+		<terrain type="F" chance="10"/>
+		<terrain type="R" chance="20"/>
+		<attribute name="type" value="TRAC"/>
+		<group>
+			<or chance="50"><attribute name="name" value="МТЗ"/></or>
+			<or chance="50"><attribute name="name" value="Беларусь"/></or>
+		</group>
+		<installed type="DETA">
+			<num-attribute name="amount" min="5" max="10"/>
+		</installed>
+		<group>
+			<or chance="30">
+				<installed type="ENGI" amount="1"/>
+			</or>
+		</group>
+	</building>
+	
+	<building type="ruins" amount="10">
+		<terrain type="W" chance="5"/>
+		<terrain type="R" chance="90"/>
+		<terrain type="g" chance="5"/>
+		<attribute name="type" value="RUIN"/>
+		<attribute name="name" value="Развалины"/>
+		<installed type="BLOC">
+			<num-attribute name="amount" min="5" max="20"/>
+		</installed>
+		<installed type="CONS">
+			<num-attribute name="amount" min="1" max="10"/>
+		</installed>
+	</building>
+	
+	<building type="fuelling stations" amount="1">
+		<terrain type="R" chance="100"/>
+		<attribute name="type" value="FUEL"/>
+		<attribute name="name" value="Бензозаправка"/>
+		<group>
+			<or chance="50">
+				<installed type="BLOC" amount="10"/>
+				<installed type="CONS" amount="20"/>
+			</or>
+			<or chance="50">
+				<installed type="BLOC">
+					<num-attribute name="amount" min="5" max="9"/>
+				</installed>
+				<installed type="CONS">
+					<num-attribute name="amount" min="10" max="19"/>
+				</installed>
+			</or>
+		</group>
+	</building>
+	
+	<building type="tanks" amount="1">
+		<terrain type="R" chance="25"/>
+		<terrain type="W" chance="25"/>
+		<terrain type="g" chance="25"/>
+		<terrain type="G" chance="25"/>
+		<attribute name="type" value="TANK"/>
+		<group>
+			<or chance="45"><attribute name="name" value="T-84"/></or>
+			<or chance="45"><attribute name="name" value="T-72"/></or>
+		</group>
+		<installed type="TARM">
+			<num-attribute name="amount" min="5" max="20"/>
+		</installed>
+		<installed type="DETA">
+			<num-attribute name="amount" min="10" max="40"/>
+		</installed>
+		<group>
+			<or chance="30">
+				<installed type="ENGI" amount="1"/>
+			</or>
+		</group>
+		<group>
+			<or chance="30">
+				<installed type="AUTO">
+					<num-attribute name="amount" min="1" max="2"/>
+				</installed>
+			</or>
+			<or chance="30">
+				<installed type="FLAM" amount="1"/>
+			</or>
+		</group>
+	</building>
+	
+	<names>
+		<group name="ru" chance="90">
+			<first>
+				<name value="Сергей" man="True"/>
+				<name value="Павел" man="True"/>
+				<name value="Николай" man="True"/>
+				<name value="Иван" man="True"/>
+				<name value="Василий" man="True"/>
+				<name value="Владимир" man="True"/>
+				<name value="Вячеслав" man="True"/>
+				<name value="Михаил" man="True"/>
+				<name value="Никита" man="True"/>
+				<name value="Даниил" man="True"/>
+				<name value="Алексей" man="True"/>
+				<name value="Александр" man="True"/>
+		    <name value="Наталья" woma="True"/>
+		    <name value="Ольга" woma="True"/>
+		    <name value="Ирина" woma="True"/>
+		    <name value="Марина" woma="True"/>
+		    <name value="Анна" woma="True"/>
+		    <name value="Лариса" woma="True"/>
+		    <name value="Людмила" woma="True"/>
+		    <name value="Вероника" woma="True"/>
+				<name value="Василий" man="True"/>
+				<name value="Назар" man="True"/>
+				<name value="Тарас" man="True"/>
+				<name value="Галина" woma="True"/>
+				<name value="Олеся" woma="True"/>
+				<name value="Юлия" woma="True"/>
+				<name value="Ольга" woma="True"/>
+				<name value="Елена" woma="True"/>
+			</first>
+			<second>
+		    <name value="Иванов" man="True"/>
+				<name value="Петров" man="True"/>
+				<name value="Кузнецов" man="True"/>
+				<name value="Фролов" man="True"/>
+				<name value="Копачев" man="True"/>
+				<name value="Мохов" man="True"/>
+				<name value="Орлов" man="True"/>
+				<name value="Багров" man="True"/>
+				<name value="Синицын" man="True"/>
+				<name value="Лебедев" man="True"/>
+				<name value="Антонов" man="True"/>
+				<name value="Донченко" man="True"/>
+				<name value="Засадный" man="True"/>
+				<name value="Захаров" man="True"/>
+				<name value="Мельник" man="True"/>
+				<name value="Пушкарский" man="True"/>
+				<name value="Полишевский" man="True"/>
+				<name value="Кураков" man="True"/>
+				<name value="Городецкий" man="True"/>
+		    <name value="Иванова" woma="True"/>
+				<name value="Петрова" woma="True"/>
+				<name value="Ковалёва" woma="True"/>
+				<name value="Мохова" woma="True"/>
+				<name value="Орлова" woma="True"/>
+				<name value="Лигова" woma="True"/>
+				<name value="Новикова" woma="True"/>
+				<name value="Малышева" woma="True"/>
+				<name value="Никитина" woma="True"/>
+				<name value="Задорожная" woma="True"/>
+				<name value="Каганова" woma="True"/>
+				<name value="Романова" woma="True"/>
+				<name value="Степанова" woma="True"/>
+				<name value="Гончаренко" man="True" woma="True"/>
+				<name value="Авдиенко" man="True" woma="True"/>
+				<name value="Стеченко" man="True" woma="True"/>
+				<name value="Бесчастных" man="True" woma="True"/>
+				<name value="Ройтман" man="True" woma="True"/>
+				<name value="Рабинович" man="True" woma="True"/>
+				<name value="Лещинский" man="True"/>
+				<name value="Лямин" man="True"/>
+				<name value="Олейник" woma="True" man="True"/>
+				<name value="Голянова" woma="True"/>
+				<name value="Гнатейко" woma="True" man="True"/>
+				<name value="Петренко" woma="True" man="True"/>
+				<name value="Ульященко" woma="True" man="True"/>
+				<name value="Тимчин" man="True"/>
+			</second>
+		</group>
+		<group name="en" chance="8">
+			<first>
+				<name value="John" man="True"/>
+				<name value="Mike" man="True"/>
+				<name value="Mario" man="True"/>
+				<name value="Paul" man="True"/>
+				<name value="Harry" man="True"/>
+		    <name value="Jane" woma="True"/>
+		    <name value="Julia" woma="True"/>
+		    <name value="Agness" woma="True"/>
+		    <name value="Sarah" woma="True"/>
+		    <name value="Violet" woma="True"/>
+			</first>
+			<second>
+		    <name value="Smith" man="True" woma="True"/>
+				<name value="Johnson" man="True" woma="True"/>
+				<name value="Cooper" man="True" woma="True"/>
+				<name value="Lemarte" man="True" woma="True"/>
+				<name value="McCormack" man="True" woma="True"/>
+				<name value="Testerburger" man="True" woma="True"/>
+				<name value="Connor" man="True" woma="True"/>
+			</second>
+		</group>
+		<group name="jp" chance="2">
+			<first>
+				<name value="Keitaro" man="True"/>
+				<name value="Oojiro" man="True"/>
+				<name value="Shirai" man="True"/>
+		    <name value="Rumiko" woma="True"/>
+		    <name value="Haruka" woma="True"/>
+		    <name value="Sakura" woma="True"/>
+			</first>
+			<second>
+		    <name value="Suzuki" man="True" woma="True"/>
+				<name value="Tanaka" man="True" woma="True"/>
+				<name value="Futaba" man="True" woma="True"/>
+				<name value="Mizuki" man="True" woma="True"/>
+			</second>
+		</group>
+	</names>
+</data>

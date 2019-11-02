@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="48"
+   name=""
+   committed-date="2006-04-08T17:51:15.520012Z"
+   url="svn://visualsystems.com.pl/inne/Wasteland/trunk/testdata"
+   last-author="gnawer"
+   kind="dir"
+   uuid="a249c678-c50f-0410-b4b8-beb0d8fd5239"
+   repos="svn://visualsystems.com.pl/inne/Wasteland"
+   revision="81"/>
+<entry
+   committed-rev="1"
+   name="gamein.xml"
+   text-time="2006-03-30T06:29:52.637301Z"
+   committed-date="2006-03-29T16:58:00.737049Z"
+   checksum="98fb34d115c3594a6f1e2a4f6cb1e229"
+   last-author="kaczy"
+   kind="file"
+   prop-time="2006-03-30T06:29:52.627288Z"/>
+<entry
+   committed-rev="48"
+   name="data.xml"
+   text-time="2006-04-10T05:32:58.705099Z"
+   committed-date="2006-04-08T17:51:15.520012Z"
+   checksum="88aa8dd1f6f3e0fb3444457ba5fc0bcd"
+   last-author="gnawer"
+   kind="file"
+   prop-time="2006-04-10T05:32:58.645163Z"/>
+</wc-entries>

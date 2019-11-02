@@ -1,0 +1,500 @@
+<html>
+<head>
+<title>Wasteland Rules</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<style> 
+body {font-family: Tahoma; font-size: 10pt;}
+.cmddesc {color: #C0C0C0} 
+.report { border: solid 1px #808080; padding-left: 15px; font-family: Courier New; font-size: 9pt;}</style>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<h1 align="center">Rules of Wasteland PBEM 1.0.6</h1>
+<p align="center">Copyright 2006 by Gnawer</p>
+<b>Editor wanted.</b><br>
+My English is far from perfect, so any help with correcting this document and 
+server messages is greatly appreciated. Write to gnawer@newmail.ru if you want 
+to help. In addition, some sections was first translated to Russian from Atlantis 
+rules and then translated back to English because they was already edited in Russian 
+- please don't laugh.<br>
+<h2>Contents</h2>
+<ol>
+  <li><a href="#intro">Introduction</a></li>
+  <li><a href="#report">Turn report</a> </li>
+  <li><a href="#persons">Persons detailed</a></li>
+  <li><a href="#attitudes">Faction attitudes</a> </li>
+  <li><a href="#actions">Possible actions</a> </li>
+  <li><a href="#warfare">Warfare</a></li>
+  <li><a href="#orders">Order format</a></li>
+</ol>
+<h2><a name="intro"></a>Introduction</h2>
+<p>Wasteland is turn-based play by email strategy game. The setting of the game 
+  is burnt wastelands in the middle of nuclear winter. The game is open-ended, 
+  there is no set objectives or victory conditions: players may choose to scavenge 
+  ruined cities, become a patriarchs of farming societies or raid the lands in 
+  armed warbands - any way of development is possible. New players may join at 
+  any time. </p>
+<p>Wasteland based on Atlantis PBEM, but it is not a modified version of Atlantis, 
+  it is completely new engine built from scratch.</p>
+<h3>What is PBEM</h3>
+<p>Wasteland is PBEM (Play By E-Mail) game. If you signed up for the game, you 
+  will receive turn reports on your email. Turn report contains complete description 
+  of your game situation. Examining the report and interacting with other players, 
+  you decide your strategy for this turn and send back to server a message with 
+  orders list. Two times a week (or differently, depending on particular game 
+  server), server will gather all received orders and generate next game turn; 
+  turn reports then again will be sent to players.</p>
+<h2><a name="report"></a>Turn report</h2>
+<p>Here is the example of one section of turn report:</p>
+<div class="report"> 
+  <p>wasteland (11,15), Middle Plains<br>
+    ------------------------------------------------------------<br>
+    &nbsp;&nbsp;Weather Forecast: clear, 5&deg;C, 10 mR/h.<br>
+    &nbsp;&nbsp;Resources: 50 rats [RAT].<br>
+    &nbsp;&nbsp;Junk: 4 dead rats [RATD].<br>
+    <br>
+  <p>Exits:<br>
+    &nbsp;&nbsp;Southeast : wasteland (13,17), Middle Plains</p>
+  <p>* John Doe (12), Middleplains Faction (11), man [MAN], 5 rats [RAT].<br>
+    &nbsp;&nbsp;Load:&nbsp;5&nbsp;kg. Skills: cook [COOK] 45, farmer [FARM] 50, 
+    woodcutter [WOOD] 50.<br>
+    &nbsp;&nbsp;Insanity: 1.<br>
+    - private Maxwell (11), NPC (1), man [MAN], kalashnikov [AKM]. <br>
+    - seargent Ivanov (14), NPC (1), man [MAN]. <br>
+  </p>
+  <p>+ Hummer (142), car [CAR], 10 car details [DETA], engine [ENGI].</p>
+ </div>
+<p>Here you can see:</p>
+<ul>
+  <li><b>Region</b>, or one cell of game map with coordinates (11,15).</li>
+  <li><b>Persons</b> in the region. Each person has a <b>Faction</b>, which is 
+    his relation to specific player. NPC is the exceptional faction for non-player 
+    characters.</li>
+  <li><b>Objects</b>: buildings and vehicles in region.</li>
+</ul>
+<p>Regions is hexagonal, so coordinate system may not be clear at first glance: 
+</p>
+ <div class="report"><pre style="margin-top: 0.5em"><font size="-1" face="Courier New, Courier, mono">   ____        ____    
+  /    \      /    \   
+ /(0,0) \____/(2,0) \____/      N  
+ \      /    \      /    \      |   
+  \____/(1,1) \____/(3,1) \_  W-х-E 
+  /    \      /    \      /     |  
+ /(0,2) \____/(2,2) \____/      S  
+ \      /    \      /    \    
+  \____/(1,3) \____/(3,3) \_ 
+  /    \      /    \      / </font></pre>
+</div>
+  
+<h2><a name="persons"></a>Persons detailed</h2>
+<h3>Chosen One and hiring</h3>
+<p>You start the game with single person - Chosen One. His exceptional gift allowing 
+  him to attract and lead people, or, in game terms, hire new persons for your 
+  faction. </p>
+<p>To hire a person, Chosen must give him some food (executing GIVE order). It 
+  may be any minimal value for NPC, or very considerable amount for person already 
+  belonging to other faction. Hire fee will not be included in inventory of recruit: 
+  it's either eaten immediately, or hidden in reserve. Chosen One can't change 
+  faction this way.</p>
+<p>You will be informed about exact amounts of food required to outbid a person 
+  from your faction, but for other persons this sum is hidden. This sum will be 
+  higher if a person is in region or in team with Chosen One, and lower depending 
+  on person Insanity and amount of persons in faction.</p>
+<p>Another exceptional gift of Chosen One is the ability to see people's strong 
+  sides. Talents of all persons in same region with Chosen One will be shown in 
+  your report. </p>
+<h3>Children</h3>
+<p>Unlike Atlantis PBEM, Wasteland has no hex population, and persons will not 
+  appear out of nowhere. Natural way of population growth is children. Women which 
+  working in team with men has a 50% chance to have baby. This process is not 
+  requiring any orders. At first, baby is just an item in mother's inventory. 
+  After some turns baby becomes a new person, which has one random father's talent 
+  and one mother's. For some turns, though, he will remail &quot;child&quot; which 
+  means he will not be able to make his own children. </p>
+<h3>Insanity</h3>
+<p>Insanity stands for level of moral and physical degradation of person. It may 
+  have values from 0 to 10. A person with Insanity 8 counts as dangerously inadequate, 
+  and shown as &quot;insane&quot; in turn report. Insane NPC can't be hired and 
+  may even attack your subordinates. Insane person in faction can't learn. If 
+  Insanity grows to 10, person leaves faction. In addition, Insanity has close 
+  connection to the amount of food which should be paid by other Chosen to re-hire 
+  your subordinate.</p>
+<p>Insanity growing by one, if person had a chance to die (from hunger, radiation, 
+  cold or wound), or if there is more than 5 persons in team. It lowers, if person 
+  was participated in baby-making, or he was CUREd, or if he is a NPC.</p>
+<p>Persons with doctor skill can CURE insanity, using medicine. Doctor with level 
+  100 can cure up to 5 patients, but can't lower Insanity of single person by 
+  more than 1 per turn.</p>
+<h3>Teams</h3>
+<p>Persons may join a team in command of other persons. Persons in team executing 
+  together all movement orders, all full-turn orders, and ATTACK order; all there 
+  orders should be given to team leader. If leader has no skill required to execute 
+  the order, it wouldn't be executed, even if team has other persons with required 
+  skill.</p>
+<p>When executing orders, skill of all persons in team are used in total. So, 
+  a team with 5 level 50 hunters will have total hunting skill of 250.</p>
+<p>If team has more than 5 persons (including leader), they will quarrel and their 
+  Insanity will rise.</p>
+<h3>Skills and talents</h3>
+<p>Each person has a set of skills that determines his successfullness in certain 
+  activities. Skills have level from 0 to 100. For example, if one level of &quot;hunter&quot; 
+  skill required to catch a rat, a person with hunter 20 will catch 20 rats.</p>
+<p>Skills may be based on other skills. In this case, skill level can't be greater 
+  than level of prerequisite skill. For example, if &quot;gunsmith&quot; skill 
+  is based on &quot;scavenge&quot;, and person has scavenge 10, level of gunsmith 
+  may not exceed 10.</p>
+<p>Usually a person (except Chosen One) has two talents - base skills which is 
+  not based on any other skills. Talents are following skills: reflexes, survival, 
+  cooking, driver, building, scavenge. Person can't learn a new talent or a skill 
+  which is not based on existing talent.</p>
+<h3>Learning</h3>
+<p>While executing an orders, person develops the skills required for that. Each 
+  month he receives 5 experience points and spends it for skill used. For example, 
+  if gunsmith with level 10 was making ammo, he raises his level up to 15.</p>
+<p>Skill will be raised even if it was not enough to execute the order. For example, 
+  a gunsmith with level 0 will not produce an ammo, but will gain level 5 regardless 
+  of that (but he still need to execute PRODUCE order and possess the components 
+  required to make ammo, to experiment with them).</p>
+<p>If skill can't be developed because there is not enough prerequisite skill, 
+  experience will be first spent on prerequisite. For example, if in previous 
+  situation the person had scavenge 10, he will promote scavenge to 13 and gunsmith 
+  to 12.</p>
+<p>If a skill is promoted to level 100, person will receive all skills based on 
+  this one with level 0.</p>
+<h3>Learning in teams</h3>
+<p>While working in team, persons are learning from their leader. The leader himself 
+  receives 5 xp as usual, but his subordinates receive 15 xp. Skill level of subordinate 
+  can't exceed skill level of leader. So, if a subordinate has higher level than 
+  his leader, he will not promote it at all (but level will not decrease).</p>
+<p>If person's leader uses a skill not known to this person, but available to 
+  be learned by him (which means the person has the talent required to learn this 
+  skill), the person will receive that skill and spend his expirience on it.</p>
+<h3>Deadly dangers</h3>
+<p>A person has a chance to die from following reasons:</p>
+<ol>
+  <li>Hunger</li>
+  <li>Radiation</li>
+  <li>Cold</li>
+  <li>Battle wound</li>
+</ol>
+<p>If person had a chance to die, but survived, his Insanity will grow by 1.</p>
+<h3></h3>
+<h3>Maintenance</h3>
+<p>Each person requires 30 rations per turn. Some items may count as more than 
+  one ration, for example mushroom counts as 1 ration, giant lizard counts as 
+  20 rations. Items are eaten completely during turn, so even if character has 
+  2 giant lizards, he will eat both, even if that's 40 rations.</p>
+<p>If person has not enough food, he'll borrow from other persons in region. If 
+  there is still not enough, he has a chance to die, equal to amount of missed 
+  rations (in percents). So, if person eats 28 rations instead of 30, chance to 
+  die is 2%.</p>
+<h3>Radiation</h3>
+<p>Each region of Wastelands has a set level of radiation. Human can safely live 
+  in region with radiation level of 100 mR/h. If there is more radiation, there 
+  is a chance, equal to overdose amount (radiation-100) that the dose was critical. 
+  So, in region with radiation 200, person will 100% have a critical dose.</p>
+<p>If a person receives critical dose of radiation, he has 10% chance to die and 
+  90% chance to mutate. If mutated, he will immediately receive Insanity 10, leave 
+  faction and become a Ghoul. Ghouls are still a type of persons, but they can't 
+  learn, even if no more insane. They can safely exist within 90-1000 units of 
+  radiation and will die if there is not enough radiation in region. Each Ghoul 
+  raises region radiation by additional 1 microroentgen.</p>
+<p>In certain buildings, radiation may be either lower or higher than region level. 
+  For example, Vault lowers radiation level, and nuclear power plant raising it. 
+  In addition, a level for particular person may be lowered or raised by items 
+  in his possession; for example, gas masks lowering radiation for owners.</p>
+<p>Note that radiation level shown in turn report is a forecast, not an actual 
+  value. This means that even radiation is suddenly raised to 250, your subordinates 
+  still has a time to run into shelters.</p>
+<h3>Cold</h3>
+<p>Second important parameter of climate if the temperature. As a rule, it is 
+  equal for all regions and changed according to season of the year. Human may 
+  safely exist in temperature from 0&deg;С and higher; if temperature drops under 
+  0, he has a chance to die equal to degrees below zero, in percents.</p>
+<p>Warm clothes and some buildings may protect from some degrees below zero, for 
+  example up to -20. If this still not enough, a person may warm himself up by 
+  burning wood and other fuel. One unit of fuel required for each degree below 
+  zero. Burning fuel is processed like maintenance and does not require special 
+  orders. </p>
+<p>Note that buildings can protect only a set amount of persons, which comes in 
+  turn report first under this building. For example, a tank only protects first 
+  4 persons inside - either in battle or from radiation and cold.</p>
+<h2><a name="attitudes"></a>Faction attitudes</h2>
+<p>Following attitudes defined:</p>
+<ul>
+  <li>Ally: your patrols will protect ally persons, your persons will automatically 
+    share food and fuel with allied ones. Also, all rules for Friendly is applied.<br>
+    <br>
+  </li>
+  <li>Friendly: friendly characters can GIVE items to yours, enter your buildings 
+    and join a team in command of your leaders.<br>
+    <br>
+  </li>
+  <li>Neutral: no rules.<br>
+    <br>
+  </li>
+  <li>Unfriendly: your patrols will block the entry to region for unfriendly persons.<br>
+    <br>
+  </li>
+  <li>Hostile: all persons with no AVOID flag set will ATTACK hostile characters 
+    in sight; patrols will attack hostile persons attempting to enter region.</li>
+</ul>
+<p>You may DECLARE a default attitude for your faction, and specific attitude 
+  for any particular faction. Note that if you set someone as Ally, this still 
+  doesn't mean he did the same.</p>
+<h3>Stealth</h3>
+<p>Person may HIDE his faction. In this case, no one will see his faction in any 
+  case, and all other persons will apply to him their default attitude.</p>
+<h2><a name="actions"></a>Possible actions</h2>
+<h3>Regular movement</h3>
+<p>When a person is ordered to MOVE, any amount of directions may be supplied 
+  as parameters, and person will move until all directions is completed. Since 
+  regions are hexagonal, usually there is six exits: N, NE, SE, S, SW, NW. </p>
+<p>In perfect conditions, a person is able to walk 2 regions per turn, spending 
+  one movement point (MP) per region. Terrain of some regions may be more difficult: 
+  2 MP is needed to enter these regions, so person can walk only one region per 
+  turn. For example, burned forest and ruined city are difficult terrains.</p>
+<p>Person can't walk if overloaded. Regular man can carry up to 50 kg. Calculated 
+  load of person is appearing in turn report as &quot;load&quot; string. Weight 
+  of each particular item is shown in Item Reports section.</p>
+<p>Persons also may move into objects and leave objects during movement. Note 
+  that ENTER and LEAVE orders may be also used for that. Since these orders is 
+  executed before MOVE and DRIVE, it may be more convenient to use them to enter 
+  and leave vehicles.</p>
+<h3>Transporting</h3>
+<p>Driving trucks, cars, and other vehicles is processed in similar way to MOVE, 
+  but instead of MOVE you should issue DRIVE order. Speed of vehicle, or amount 
+  of MP available to it, is depending on particular vehicle type.</p>
+<p>Usually a vehicle requires gasoline to be driven. One unit of gasoline
+  is required to drive by one region. Gasoline must present in inventory of the
+  driver.</p>
+<p>Vehicle is moving all persons inside with it, if sum of their weight is not 
+  exceeding vehicle's capacity. Persons which are not driving vehicle on the way 
+  may execute different orders in same turn.</p>
+<p>Some types of terrain is impassable for land vehicles, like burned forest.</p>
+<h3>Patrols</h3>
+<p>A person can patrol a region. While doing it, he will block entry to region 
+  to unfriendly and hostile persons, and also will protect attacked persons from 
+  same or allied faction.</p>
+<p>In patrol, a person is developing his combat skills. If a person also participated 
+  in combat, he still receives experience once per turn.</p>
+<h3>Barter</h3>
+<p>A person may trade with other persons. He may set a price for any of his items 
+  with TRADE command. If other person in region, regardless of that person's faction, 
+  also received TRADE order, and the conditions is matching with first one's, 
+  the items will be exchanged. Otherwise, the offer will remain unclosed and will 
+  be shown in turn reports of other players.</p>
+<p>For example, a person is trading 10 rats in exchange to 20 ammo. The price 
+  is 2 ammo per rat. If other character in region wants to trade 6 ammo for 3 
+  rats, the deal will be done and second offer will be closed. If other person 
+  will offer 3 ammo for 1 rat, deal still will be done, but first person will 
+  receive 3 ammo, not 2 as requested. If 1 ammo was offered for 1 rat, there is 
+  no deal.</p>
+<h3>Scavenging</h3>
+<p>A person with &quot;scavenge&quot; skill can execute SCAVENGE order, picking 
+  an items from region's Junk. For each level of scavenge, person can take one 
+  item. </p>
+<h3>Producing</h3>
+<p>Many items may be produced by PRODUCE order. For example, if a person received 
+  PRODUCE &quot;grilled rats&quot; order, he will make grilled rats, in case he 
+  has enough cooking skill and enough dead rats to begin with.</p>
+<p>A raw materials required to make some items. In last example, we needed dead 
+  rats to produce grilled rats. There is a cases when one item requires multiple 
+  raw materials, and a cases when multiple items may be produced from one unit 
+  of raw material.</p>
+<p>If an item doesn't require raw material to produce, it is called &quot;resource&quot; 
+  and produced from region's Resources (for example, if rats are exist in region, 
+  person can catch them). If multiple teams are producing same resource in region, 
+  the amount produced will be distributed between teams depending on their skill 
+  level. </p>
+<p>The higher the skill level, the better a person will produce. For example, 
+  30 rats could e produced by 10 level 3 hunters, or by one level 30 hunter. Some 
+  items require sertain level just to make one unit: for example, to make one 
+  ammo, gunsmith 5 is required. In this case, gunsmith 100 will produce 20 ammo 
+  per turn.</p>
+<h3> Building objects</h3>
+<p>Objects (buildings and vehicles) often consist of multiple amounts of different 
+  materials. For example, an incomplete tank:</p>
+<p>+ Panzer MK [123], tank [TANK], 3 car details [DETA]. Needs: 37 car details 
+  [DETA], engine [ENGI].</p>
+<p>needs 37 car details and 1 engine to be installed. </p>
+<p>To build an object from the ground, BUILD order should be issued. First materials 
+  in object's list is required for that (in last example that was car details), 
+  and the person should have a skill to INSTALL them.</p>
+<p>To continue building of started object, a person should INSTALL the needed 
+  parts, being inside that object. Note that sequential BUILD order will start 
+  another one object instead of continuing this one. </p>
+<p>Optional blocks could be installed in some objects (usually that's weapons). 
+  You can install only one optional variant - for example, for tank that will 
+  be either up to 2 autoguns or up to 2 flamethrowers. The list of required and 
+  optional materials is shown in Object Reports section.</p>
+<h3>Uninstalling components</h3>
+<p>A materials installed in objects may be uninstalled from there with UNINSTALL 
+  order. To complete that, a person needs similar skill that to INSTALL this material, 
+  but only one level is required to uninstall any component. The uninstalling 
+  person, or person from same faction, must own object.</p>
+<h2><a name="warfare"></a>Warfare</h2>
+<h3>Where and when the battle begins</h3>
+<p>Battle begins in following cases:</p>
+<ul>
+  <li>A person ATTACKing other person.</li>
+  <li>Persons with no AVOID flag set automatically attacking any hostile persons.</li>
+  <li>Patrols will attack any hostile persons trying to enter the region.</li>
+  <li>A person with MOVE ATTACK or DRIVE ATTACK order will attack patrols if they 
+    trying to block the way.</li>
+</ul>
+<h3>Who will fight<br>
+</h3>
+<ol>
+  <li>Either the persons and their teams from single region which are ATTACKed 
+    same target, or single person and his team in other cases.</li>
+  <li>Attacked person and his team.</li>
+  <li> Patrols of attacked and allied factions from same region.</li>
+</ol>
+<h3>Rounds</h3>
+<p>The combat is processed in rounds. In each round, each fighter has a chance 
+  to make a move (shoot, assault, flee, etc). But, if anyone on battlefield has 
+  a ranged weapon, all fighters with melee weapons lose their attack in first round.
+  In that case, only possible actions in first round is shooting or running away.</p>
+<p>Fighters act in order determined 
+  by &quot;reflexes&quot; talent: ones with higher reflexes will act first.</p>
+
+<h3>Attacks</h3>
+
+<p>Attacks in close combat or shots is 
+  processed by following sequence:</p>
+<ol>
+  <li>Rolling to hit. The chance to hit the target is depending on shooter's weapon 
+    skill: if skill level is 50, it will be 50%.</li>
+  <li>If both attacker and defender has melee weapon, there is a roll to block 
+    the hit. Block probability is equal to defender's weapon skill.</li>
+  <li>If a target has bulletproof jacket or other armor, follows armor save roll. 
+    The chance to save depends on type of armor.</li>
+  <li>Rolling to wound. Chance to wound depends on weapon type.</li>
+  <li>If the hit is connected, fighter is out of action. But, there is still a 
+    chance that he is survived. The chance to survive depends on weapon's lethality 
+    factor.</li>
+</ol>
+<p>Particular weapons can apply a modifiers to different rolls: for example, machine 
+  gun lowers hit probability, and shotgun is raises armor save probability.</p>
+<p>For each roll there is 1% chance to pass and 1% chance to fail, even if it 
+  is impossible. So, a level 100 sniper will actually hit 99% targets.</p>
+<p>Persons without weapon or weapon skill can't attack and will flee as soon as 
+  possible. </p>
+<h3>Fleeing</h3>
+<p>A person will flee in following cases:</p>
+<ul>
+  <li>He has AVOID flag set</li>
+  <li>He has no weapon or no skill to use weapon </li>
+  <li>He is ran out of ammo</li>
+  <li>He uses explosives and either has no targets to blow up or already set his 
+    bomb </li>
+  <li>In previous round (if it wasn't first round) his side wasn't able to make 
+    at least one attack, either successful or not.</li>
+</ul>
+<p>Actual fleeing will be committed in person's turn in reflexes order, but from 
+  the start of the turn fleeing person can't be target of ranged weapons, in case 
+  when there is still someone fighting on his side. So, a person with AVOID flag 
+  has good chance to run away in first round if a patrolling shooter is covering 
+  him. </p>
+<h3>Incapacitated persons</h3>
+<p>If person was incapacitated, AVOID flag will be set for him automatically. 
+  Therefore, he will not participate in further battles this turn, even if ordered 
+  to patrol. The flag may be reset as usual.</p>
+<h3>Buildings and vehicles</h3>
+<p>A person inside an object can't be target of ranged weapons. If he is assaulting 
+  with melee weapon, he is going out of cover. An opponent with melee weapon can 
+  attack fighters inside objects without any penalties.</p>
+<h3>&quot;Watch out, comrade!&quot;</h3>
+<p>Chosen One can't be target of ranged or melee weapons, if there is at least 
+  one fighter on his side, even fleeing. His comrades will cover him at any cost.</p>
+<h3>Victory and spoils</h3>
+<p>The battle is ended when one side has all persons out of action or fleed. Also, 
+  a battle may end as a draw after 50 rounds. </p>
+<p>If there is a winner, his soldiers may collect the spoils. Spoils are cases 
+  from shot ammo, and all items of killed and incapacitated (but not fleed) fighters. 
+</p>
+<p>Spoils are taken by following rules:</p>
+<ul>
+  <li>If preferences are set for this person by SPOILS order, maximum amount of 
+    one of given item types will be taken. For example, if person was ordered 
+    to take handguns and knives, he will take either max amount of handguns or 
+    maximum amount of knives - depending on what was first in SPOILS order.</li>
+  <li>If no preferences was given, or none of preferred spoils found, person will 
+    just take some random items.</li>
+</ul>
+<p>A person will not take more items than he can carry. If spoils have zero weight, 
+  random amount will be taken. All uncollected spoils, excluding items of incapacitated 
+  but survived fighters, is falling to region Junk.</p>
+<h3>Experience</h3>
+<p>Persons participated in battle are developing their combat skills. Note that 
+  if team leader developed some particular skill, all his subordinates will also 
+  develop that skill, even if they have different type of weapons.</p>
+<h3>Weapon characteristics</h3>
+<ul>
+  <li><b>Ammo.</b> Many types of weapons require ammo, which is spent on each 
+    shot - for example, 9mm ammo for pistol. Ammo must exist in person's inventory. 
+    When all ammo is spent, person will flee. Shot cases will be picked up by 
+    winners.</li>
+  <li><b>Heavy weapons</b> must be mounted on building or vehicle, and shooter 
+    must be inside the object to use it. If a person has heavy weapon in his inventory, 
+    he will not be able to use it.</li>
+  <li><b>Anti-tank weapons</b> first target vehicles and buildings of opposite 
+    side. Each object has set amount of hit points, which must be lowered to 0 
+    by hits from this type of weapon to destroy the object. If there are no objects 
+    on battlefield, shooter begins to target separate characters. In that case, 
+    if roll to hit was successful, the target is immediately killed - all further 
+    rolls are skipped. &quot;To wound&quot; characteristic of this type of weapon 
+    is applied only to objects.</li>
+  <li><b>Explosive weapons</b> (bombs) may target only buildings and vehicles. 
+    Miner's skill is tested twice: first to make successful placement of the bomb, 
+    and second to run away from explosion. After explosion, the object is destroyed 
+    and all persons inside suffering automatic hit with no armor save and wound 
+    chance equal to bomb to wound characteristic.</li>
+</ul>
+<p></p>
+<h2><a name="orders"></a>Orders format</h2>
+<p>To give an orders to your units, you need to send a mail to server address 
+  containing following lines:</p>
+<p>#orders &lt;faction number&gt; &lt;password&gt;<br>
+  person &lt;number&gt;<br>
+  ...orders...<br>
+  person &lt;number&gt;<br>
+  ...orders...<br>
+  #end<br>
+</p>
+<p>For example, if your faction number is 27, and you have two persons - 5 and 
+  17, your orders may look like this:</p>
+<p>#orders 27 &quot;password&quot;<br>
+</p>
+<p>person 5<br>
+  name person &quot;John Connor&quot;<br>
+  @patrol<br>
+  <br>
+  person 17<br>
+  move N NW<br>
+  <br>
+  #end<br>
+</p>
+<p>Orders for each person must start with PERSON keyword. Any order must be addressed 
+  to one of your characters. If an order is not directly related to any character, 
+  like NAME FACTION order, this order may be given to any person in faction.</p>
+<p>Order parser is case-insensitive, so you may use either lowercase or uppercase.</p>
+<p>Detailed order list is located in file reference.html</p>
+<h3>Repeating orders</h3>
+<p>If @ sign is supplied as first character of order (for example, &quot;@move 
+  N NW&quot;), this order will apperar in Orders Template section or your next 
+  report. This is useful if you want a person to execute same orders each turn.</p>
+<h3>Abbreviations<br>
+</h3>
+<p>All items and skills has short names (for example, metal constructions [CONS]). 
+  When issuing an order, you may use either full or short name. So, order PRODUCE 
+  &quot;metal constructions&quot; is equivalent to PRODUCE CONS. Note that full 
+  names should usually be enclosed in quotes.</p>
+<h3>Instant and full-turn orders</h3>
+<p>Most orders doesn't require long time to execute - you may issue as many orders 
+  of this type as you want. But, each person may receive only one order, which 
+  determines his actions for whole turn (like MOVE or PRODUCE). If two or more 
+  full-turn orders issued, person will execute only last one.</p>
+</body>
+</html>

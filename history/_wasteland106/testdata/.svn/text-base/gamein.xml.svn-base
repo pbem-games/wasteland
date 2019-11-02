@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<game turn="36">
+	<faction num="1" name="NPC" password="" email="" default-attitude="2" text-report="True" xml-report="True" lang="en"/>
+	<faction num="2" name="Faction" password="xyzzy" email="mail@mail.ru  " default-attitude="2" text-report="True" xml-report="True" lang="ru">
+	</faction>
+	<map width="2" height="2">
+		<region x="0" y="0" terrain="R" name="Wasteland" radiation="104">
+			<resource type="RAT" amount="228"/>
+			<junk type="BLOC" amount="19"/>
+			<junk type="CONS" amount="17"/>
+			<junk type="DETA" amount="25"/>
+			<building type="CAR" num="70" name="Audi">
+				<installed type="DETA" amount="9"/>
+			</building>
+			<building type="RUIN" num="1446" name="Развалины">
+				<installed type="BLOC" amount="9"/>
+				<installed type="CONS" amount="1"/>
+			</building>
+			<person num="3941" name="Сергей Пушкарский" faction="2" insanity="10" avoiding="True" age="136" chosen="True" building="2358">
+				<item type="MAN" amount="1"/>
+				<item type="SUIT" amount="1"/>
+				<item type="GGUN" amount="1"/>
+				<item type="DETA" amount="1"/>
+				<item type="LJAC" amount="1"/>
+				<item type="RGGU" amount="1"/>
+				<item type="900C" amount="35"/>
+				<item type="GASM" amount="1"/>
+				<item type="AUNI" amount="1"/>
+				<item type="KNIF" amount="1"/>
+				<item type="FUR" amount="1"/>
+				<skill type="REFL" level="53"/>
+				<skill type="RANG" level="50"/>
+				<skill type="MELE" level="52"/>
+				<skill type="COOK" level="50"/>
+				<skill type="SCAV" level="50"/>
+				<skill type="DRIV" level="65"/>
+				<skill type="MECH" level="55"/>
+				<skill type="SURV" level="100"/>
+				<skill type="HUNT" level="50"/>
+				<skill type="FARM" level="50"/>
+				<skill type="WOOD" level="50"/>
+				<skill type="BUIL" level="50"/>
+			</person>
+			<person num="801" name="лейтенант Полишевский" faction="1" insanity="0" age="236">
+				<item type="GHOU" amount="1"/>
+				<item type="PM" amount="1"/>
+				<item type="900A" amount="17"/>
+				<item type="PUNI" amount="1"/>
+				<item type="CAN" amount="1"/>
+				<skill type="REFL" level="20"/>
+				<skill type="RANG" level="20"/>
+				<skill type="DRIV" level="50"/>
+				<skill type="MECH" level="10"/>
+			</person>
+			<person num="3764" name="Алексей Фролов" faction="1" insanity="0" age="36">
+				<item type="GHOU" amount="1"/>
+				<skill type="SCAV" level="0"/>
+				<skill type="COOK" level="0"/>
+			</person>
+			<person num="3918" name="Лариса Ройтман" faction="1" insanity="0" age="36">
+				<item type="GHOU" amount="1"/>
+				<item type="SWEA" amount="1"/>
+				<skill type="SCAV" level="0"/>
+				<skill type="BUIL" level="0"/>
+			</person>
+			<person num="3273" name="Mike Connor" faction="1" insanity="0" age="236">
+				<item type="GHOU" amount="1"/>
+				<item type="CAN" amount="4"/>
+				<item type="LCOA" amount="1"/>
+				<skill type="SCAV" level="36"/>
+				<skill type="REFL" level="24"/>
+			</person>
+			<person num="3456" name="Владимир Городецкий" faction="1" insanity="0" age="236">
+				<item type="GHOU" amount="1"/>
+				<item type="SWEA" amount="1"/>
+				<skill type="SCAV" level="41"/>
+				<skill type="SURV" level="100"/>
+				<skill type="FARM" level="36"/>
+				<skill type="HUNT" level="53"/>
+				<skill type="WOOD" level="92"/>
+			</person>
+			<person num="2191" name="Василий Авдиенко" faction="1" insanity="0" age="236">
+				<item type="GHOU" amount="1"/>
+				<item type="CJAC" amount="1"/>
+				<item type="DMUS" amount="74"/>
+				<skill type="SURV" level="100"/>
+				<skill type="FARM" level="98"/>
+				<skill type="HUNT" level="3"/>
+				<skill type="WOOD" level="24"/>
+				<skill type="BUIL" level="73"/>
+			</person>
+			<person num="3264" name="Марина Степанова" faction="1" insanity="0" age="236">
+				<item type="GHOU" amount="1"/>
+				<skill type="SCAV" level="13"/>
+				<skill type="GUNS" level="30"/>
+				<skill type="BUIL" level="79"/>
+			</person>
+			<person num="5405" name="Волкособака" faction="1" insanity="0" age="122">
+				<item type="WOLF" amount="1"/>
+				<skill type="REFL" level="90"/>
+				<skill type="MELE" level="50"/>
+			</person>
+		</region>
+		<region x="1" y="1" terrain="R" name="Wasteland" radiation="77">
+			<resource type="RAT" amount="203"/>
+			<junk type="BLOC" amount="27"/>
+			<junk type="CONS" amount="9"/>
+			<junk type="DETA" amount="22"/>
+		</region>
+	</map>
+</game>

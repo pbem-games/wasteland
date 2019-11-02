@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>Wasteland Rules</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<style>body {font-family: Tahoma; font-size: 10pt;}
+.cmddesc {color: #C0C0C0} 
+.report { border: solid 1px #808080; padding-left: 15px; font-family: Courier New; font-size: 9pt;}</style>
+
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<h2 align="left">Server commands</h2>
+E-mail of the server: wasteland-pbem@yandex.ru 
+<h3>How to join the game</h3>
+<p>Send email to server addres with following lines inside. Note that subject 
+  of the join request email must be &quot;<b>request</b>&quot; (exactly that one 
+  word), or else request will not be processed. This, and all other emails should 
+  be in plain text format, not html - server can't process html properly.</p>
+<div class="report">
+  <p>Faction: Faction Name<br>
+    Chosen: man (or: woman)<br>
+    Name: Name of Chosen One<br>
+    Skill: one of: PYRO, STAI, SGUN*</p>
+</div>
+<p>* Skill parameter defines a special skill available to your Chosen.
+Only one skill might be taken. More skill may be added later, so keep an
+eye for updates if you'll want to restart.</p>
+<ul>
+  <li>pyromania [PYRO]: Addiction to various hand grenades.
+  <li>specialist tailor [STAI]: Ability to produce special clothes.
+  <li>specialist gunsmith [SGUN]: Ability to produce double-barrelled shotguns.
+</ul>
+<h3>How to send an order</h3>
+<p>Send email to server with subject &quot;orders&quot; and your orders in message 
+  body, for example:</p>
+<div class="report">
+  <p>#orders 123 &quot;password&quot;</p>
+<p>person 132<br>
+  &nbsp;&nbsp;produce RAT</p>
+  <p>#end<br>
+  </p>
+  </div>
+<h3>How to ask the server to re-send last turn report</h3>
+<div class="report">
+  <p>#resend 123 &quot;password&quot;</p>
+</div>
+
+<h3>How to send message to other player</h3>
+<p>For open discussion of game-related questions, subscribe to <a href="http://groups.yahoo.com/group/wasteland-radio">wasteland-radio</a>. 
+  Primary language of the Radio is Russian, but English is allowed as well and 
+  will be understood by majority of players.</p>
+<h3></h3>
+<p>To send a message to faction number (for example, 155), send following email:</p>
+<div class="report"> 
+  <p>#mail 155 123 &quot;password&quot;<br>
+  </p>
+  <p>Hello there!</p>
+  <p>#end</p>
+  </div>
+  <p>Parameters 123 &quot;password&quot; is your faction number and password; you 
+  may omit these if you don't want the message to be signed.</p>
+<p>Message to person number if faction is unknown (for example, 1536):</p>
+<div class="report">
+  <p>#mail person 1536 123 &quot;password&quot;</p>
+</div>
+<h3>Technical questions</h3>
+<p>If you want to discuss game engine, look in the source code or report a bug, 
+  subscribe to <a href="http://groups.yahoo.com/group/wasteland-pbem">wasteland-pbem</a> 
+  list. Again, primary language is Russian. Look for sources in Files section.</p>
+<div class="report"></div>
+
+<div class="report"></div>
+
+</body>
+</html>

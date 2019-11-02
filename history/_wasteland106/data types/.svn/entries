@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="78"
+   name=""
+   committed-date="2006-04-24T18:28:44.980365Z"
+   url="svn://visualsystems.com.pl/inne/Wasteland/trunk/data%20types"
+   last-author="gnawer"
+   kind="dir"
+   uuid="a249c678-c50f-0410-b4b8-beb0d8fd5239"
+   repos="svn://visualsystems.com.pl/inne/Wasteland"
+   revision="81"/>
+<entry
+   committed-rev="78"
+   name="Order.cs"
+   text-time="2006-04-25T05:10:49.401917Z"
+   committed-date="2006-04-24T18:28:44.980365Z"
+   checksum="6db41f1f6a40bed2cf2e2e5d246311c7"
+   last-author="gnawer"
+   kind="file"
+   prop-time="2006-04-25T05:10:48.861220Z"/>
+<entry
+   committed-rev="28"
+   name="Building.cs"
+   text-time="2006-04-03T07:01:38.821750Z"
+   committed-date="2006-04-02T18:35:03.515466Z"
+   checksum="dd305d68509d29d2929ec60d5393c2da"
+   last-author="gnawer"
+   kind="file"
+   prop-time="2006-04-03T07:01:37.650065Z"/>
+<entry
+   committed-rev="28"
+   name="Item.cs"
+   text-time="2006-04-03T07:01:38.861807Z"
+   committed-date="2006-04-02T18:35:03.515466Z"
+   checksum="cf16082008428d4d873ce82626bcffdb"
+   last-author="gnawer"
+   kind="file"
+   prop-time="2006-04-03T07:01:37.680108Z"/>
+<entry
+   committed-rev="48"
+   name="Skill.cs"
+   text-time="2006-04-10T05:32:58.245587Z"
+   committed-date="2006-04-08T17:51:15.520012Z"
+   checksum="ebcefc3701693b8e5dc9e43bb6b21205"
+   last-author="gnawer"
+   kind="file"
+   prop-time="2006-04-10T05:32:57.386499Z"/>
+<entry
+   committed-rev="28"
+   name="Weather.cs"
+   text-time="2006-04-03T07:01:38.941922Z"
+   committed-date="2006-04-02T18:35:03.515466Z"
+   checksum="9fdc0ba554aab3b6cc970531214772c8"
+   last-author="gnawer"
+   kind="file"
+   prop-time="2006-04-03T07:01:37.760223Z"/>
+<entry
+   committed-rev="48"
+   name="Event.cs"
+   text-time="2006-04-10T05:32:58.295534Z"
+   committed-date="2006-04-08T17:51:15.520012Z"
+   checksum="6a35529072f1d83e4edb6e64c65f848f"
+   last-author="gnawer"
+   kind="file"
+   prop-time="2006-04-10T05:32:57.436446Z"/>
+<entry
+   committed-rev="78"
+   name="Faction.cs"
+   text-time="2006-04-25T05:10:49.502046Z"
+   committed-date="2006-04-24T18:28:44.980365Z"
+   checksum="b28165bbe229412c50638a532a983167"
+   last-author="gnawer"
+   kind="file"
+   prop-time="2006-04-25T05:10:49.351853Z"/>
+<entry
+   committed-rev="28"
+   name="Region.cs"
+   text-time="2006-04-03T07:01:39.062095Z"
+   committed-date="2006-04-02T18:35:03.515466Z"
+   checksum="af613a8db8a7d0455dc492667f65684b"
+   last-author="gnawer"
+   kind="file"
+   prop-time="2006-04-03T07:01:38.671534Z"/>
+<entry
+   committed-rev="28"
+   name="Terrain.cs"
+   text-time="2006-04-03T07:01:39.102153Z"
+   committed-date="2006-04-02T18:35:03.515466Z"
+   checksum="1b0d7031775c061a930cc4b562c317f1"
+   last-author="gnawer"
+   kind="file"
+   prop-time="2006-04-03T07:01:38.691562Z"/>
+<entry
+   committed-rev="78"
+   name="Person.cs"
+   text-time="2006-04-25T05:10:49.461994Z"
+   committed-date="2006-04-24T18:28:44.980365Z"
+   checksum="5698c6ca9c08a8c04d27b9659ebe9757"
+   last-author="gnawer"
+   kind="file"
+   prop-time="2006-04-25T05:10:49.311801Z"/>
+</wc-entries>

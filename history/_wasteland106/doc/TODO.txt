@@ -1,0 +1,15 @@
+1. OPTION patrol-reports
+2. OPTION person-describe-in-orders [done]
+3. Buildings, observation towers, garages - delayed unitl boredom :)
+4. double ATTACK phase / order of execution - undecided yet
+5. item classes for scavenge (FOOD, WEAPONS, BURNABLES) - undecided yet
+6. TINKERING skill 
+7. WATER resource (yeah, let's make the hardcore tough game)  - undecided
+yet
+8. Stealth system - steal, murder, kidnap etc.. - delayed until beta finish,
+due to balance issues
+9. geiger meter item - delayed
+10. Mutation concept extended
+11. generally more skills, weapons, items, monsters
+12. extend order parsing with skills/and person existance checks
+13. refactor NAME/DESCRIBE orders

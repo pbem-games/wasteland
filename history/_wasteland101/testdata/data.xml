@@ -1,0 +1,1061 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<data>
+
+  <skill>
+
+    <entry name="REFL" name-en="reflexes" name-ru="рефлексы"
+      description-en="This skill determines order of actions in combat."
+      description-ru="Навык определяет последовательность действий в бою."/>
+
+      <entry name="RANG" name-en="ranged combat" name-ru="стрельба" based-on="REFL"
+        description-en="This skill is required to use ranged weapons."
+        description-ru="Навык требуется для использования стрелкового оружия."/>
+
+        <entry name="HWPN" name-en="heavy weapons" name-ru="тяжёлое оружие" based-on="RANG"
+          description-en="This skill is required to use heavy weapons."
+          description-ru="Навык требуется для использования тяжёлого оружия."/>
+
+      <entry name="MELE" name-en="melee combat" name-ru="рукопашная" based-on="REFL"
+        description-en="This skill is required to use melee weapons, or to fight with martial arts."
+        description-ru="Навык требуется для использования оружия ближнего боя или боевых единоборств."/>
+
+    <entry name="COOK" name-en="cooking" name-ru="повар"/>
+
+      <entry name="CHEM" name-en="chemistry" name-ru="химик" based-on="COOK"/>
+
+        <entry name="EXPL" name-en="explosives" name-ru="взрывник" based-on="CHEM"
+          description-en="This skill is required to use explosives in combat."
+          description-ru="Навык требуется для использования взрывчатки в бою."/>
+
+      <entry name="DOC" name-en="doctor" name-ru="доктор" based-on="COOK"
+        description-en="A person with this skill can CURE up to (skill level / 20) persons per turn."
+        description-ru="Навык позволяет лечить Безумие. Персонаж может одновременно лечить количество пациентов, равное уровню навыка, делёному на 20."/>
+
+        <entry name="WITC" name-en="witch doctor" name-ru="знахарь" based-on="DOC"/>
+
+    <entry name="SCAV" name-en="scavenge" name-ru="мусорщик"
+      description-en="A person with this skill can SCAVENGE up to (skill level) items from Junk."
+      description-ru="Персонаж с этим навыком может выкапывать в Мусоре предметы в количестве, равном уровню навыка."/>
+    
+      <entry name="TAIL" name-en="tailor" name-ru="портной" based-on="SCAV"/>
+
+        <entry name="ARMO" name-en="armorer" name-ru="бронник" based-on="TAIL"/>
+
+      <entry name="GUNS" name-en="gunsmith" name-ru="оружейник" based-on="SCAV"/>
+
+    <entry name="DRIV" name-en="driver" name-ru="водитель"/>
+
+      <entry name="MECH" name-en="mechanics" name-ru="механик" based-on="DRIV"/>
+
+        <entry name="ENGI" name-en="war engineer" name-ru="военный инженер" based-on="MECH"/>
+
+    <entry name="SURV" name-en="survival" name-ru="выживание" 
+      default-level="100"
+      description-en="This talent represents basic knowledge of countryside life and always has level 100, if known by person."
+      description-ru="Этот талант отражает базовые познания о выживании в условиях дикой природы, и всегда имеет уровень 100, если присутствует у персонажа."/>
+
+      <entry name="HUNT" name-en="hunting" name-ru="охотник" based-on="SURV"/>
+
+      <entry name="FARM" name-en="farming" name-ru="фермер" based-on="SURV"/>
+
+      <entry name="WOOD" name-en="woodcutter" name-ru="дровосек" based-on="SURV"/>
+
+    <entry name="BUIL" name-en="building" name-ru="строитель"/>
+
+  </skill>
+
+  <building>
+
+    <!-- Transport -->
+
+    <entry name="CAR" name-en="car" name-ru="автомобиль"
+      speed="8" capacity="400" fuel="GAS" defence="4" temperature="+5">
+      <drive-skill name="DRIV" level="10"/>
+      <material name="DETA" amount="10"/>
+      <material name="ENGI" amount="1"/>
+    </entry>
+
+    <entry name="TRUC" name-en="truck" name-ru="грузовик"
+      speed="6" capacity="5000" fuel="GAS" defence="2" temperature="+5">
+      <drive-skill name="DRIV" level="20"/>
+      <material name="DETA" amount="40"/>
+      <material name="ENGI" amount="1"/>
+    </entry>
+
+    <entry name="ACAR" name-en="armored car" name-ru="бронированный автомобиль"
+      speed="4" capacity="200" fuel="GAS" defence="2" temperature="+5" 
+      radiation="-10" hp="1">
+      <drive-skill name="DRIV" level="20"/>
+      <material name="DETA" amount="20"/>
+      <material name="ENGI" amount="1"/>
+      <optional name="AUTO" amount="1"/>
+      <optional name="FLAM" amount="1"/>
+    </entry>
+
+    <entry name="TANK" name-en="tank" name-ru="танк"
+      speed="3" capacity="1000" fuel="GAS" defence="4" temperature="+10" 
+      radiation="-30" hp="10">
+      <drive-skill name="DRIV" level="50"/>
+      <material name="DETA" amount="40"/>
+      <material name="TARM" amount="20"/>
+      <material name="ENGI" amount="1"/>
+      <optional name="AUTO" amount="2"/>
+      <optional name="FLAM" amount="2"/>
+    </entry>
+
+    <entry name="TRAC" name-en="tractor" name-ru="трактор"
+      speed="2" capacity="2000" fuel="GAS" defence="1" temperature="+5"
+      drive-terrain="F">
+      <drive-skill name="DRIV" level="10"/>
+      <material name="DETA" amount="10"/>
+      <material name="ENGI" amount="1"/>
+    </entry>
+
+    <!-- Buildings -->
+
+    <entry name="VAUL" name-en="vault" name-ru="убежище"
+      defence="100" radiation="-100" temperature="+30">
+      <material name="BLOC" amount="100"/>
+      <material name="CONS" amount="100"/>
+    </entry>
+
+    <entry name="METR" name-en="metro station" name-ru="станция метро"
+      defence="100" radiation="-100" temperature="+20" nobuild="True">
+      <material name="BLOC" amount="50"/>
+      <material name="CONS" amount="50"/>
+    </entry>
+
+    <entry name="BUNK" name-en="bunker" name-ru="бункер"
+      defence="5" radiation="-20" temperature="+10" hp="10">
+      <material name="BLOC" amount="10"/>
+      <material name="CONS" amount="10"/>
+      <optional name="AUTO" amount="2"/>
+      <optional name="FLAM" amount="2"/>
+    </entry>
+
+    <entry name="BARR" name-en="barracks" name-ru="барак"
+      defence="10" radiation="-20" temperature="+20">
+      <material name="BLOC" amount="10"/>
+    </entry>
+
+    <entry name="HUT" name-en="hut" name-ru="землянка"
+      defence="5" temperature="+10">
+      <material name="WOOD" amount="50"/>
+    </entry>
+
+    <!-- Resourcers -->
+
+    <entry name="HYDR" name-en="hydroponic plantation" name-ru="гидропонная теплица"
+      defence="10" temperature="+20">
+      <material name="CONS" amount="10"/>
+      <material name="MUSH" amount="100"/>
+      <resource name="MUSH" amount="100"/>
+    </entry>
+
+    <entry name="FUEL" name-en="fuelling station" name-ru="бензозаправка" nobuild="True">
+      <material name="BLOC" amount="10"/>
+      <material name="CONS" amount="20"/>
+      <resource name="GAS" amount="10"/>
+    </entry>
+
+    <!-- Ruins -->
+
+    <entry name="RUIN" name-en="ruins" name-ru="развалины">
+    </entry>
+
+    <entry name="CRAS" name-en="crashed bomber" name-ru="разбитый бомбардировщик">
+    </entry>
+
+  </building>
+  
+  <item>
+
+    <!-- Men -->
+
+    <entry name="MAN" is-man="True" is-weapon="True"
+      name-en1="man" name-en2="men" 
+      name-ru1="мужчина" name-ru2="мужчины" name-ru0="мужчин"
+      nogive="True" weight="80" capacity-walk="130"
+      radiation-from="0" radiation-to="100" radiation-effect="1"
+      mutate-percent="90" mutate-to="GHOU"
+      medicine="MEDI" max-hire-amount="10000"
+      wound-chance="15" lethality="10" weapon-skill="MELE"
+      aggression="10">
+      <food name="GRIL"/>
+      <food name="ROAS"/>
+      <food name="DMUS"/>
+      <food name="RATD"/>
+      <food name="MUSH"/>
+      <food name="MEAT"/>
+      <food name="CAN"/>
+      <drop type="BODY" amount="1"/>
+    </entry>
+
+    <entry name="WOMA" is-man="True" is-weapon="True"
+      name-en1="woman" name-en2="women" 
+      name-ru1="женщина" name-ru2="женщины" name-ru0="женщин"
+      nogive="True" weight="70" capacity-walk="115"
+      radiation-from="0" radiation-to="100" radiation-effect="1"
+      mutate-percent="90" mutate-to="GHOU"
+      medicine="MEDI" max-hire-amount="10000"
+      wound-chance="10" lethality="10" weapon-skill="MELE"
+      baby="BABY" baby-from="MAN" baby-timer="5"
+      aggression="5">
+      <food name="GRIL"/>
+      <food name="ROAS"/>
+      <food name="DMUS"/>
+      <food name="RATD"/>
+      <food name="MUSH"/>
+      <food name="MEAT"/>
+      <food name="CAN"/>
+      <drop type="BODY" amount="1"/>
+    </entry>
+    
+    <entry name="GHOU" is-man="True" nolearn="True" is-weapon="True"
+      name-en1="ghoul" name-en2="ghouls"
+      name-ru1="трупоед" name-ru2="трупоеда" name-ru0="трупоедов"
+      nogive="True" weight="70" capacity-walk="100"
+      radiation-from="90" radiation-to="300" radiation-effect="1"
+      region-radiation="+1"
+      wound-chance="5" lethality="10" weapon-skill="MELE"
+      medicine="MEDI" max-hire-amount="5000"
+      aggression="20">
+      <food name="BODY"/>
+      <food name="GRIL"/>
+      <food name="ROAS"/>
+      <food name="DMUS"/>
+      <food name="RATG"/>
+      <food name="RATD"/>
+      <food name="MUSH"/>
+      <food name="MEAT"/>
+      <food name="CAN"/>
+      <drop type="BODY" amount="1"/>
+    </entry>
+
+    <entry name="BABY" 
+      name-en1="baby" name-en2="babies"
+      name-ru1="ребёнок" name-ru2="ребёнка" name-ru0="детей"
+      nogive="True" weight="40">
+      <grow-to name="MAN"/>
+      <grow-to name="WOMA"/>
+    </entry>
+
+    
+    <!-- Monsters -->
+    
+    <entry name="OGRE" is-man="True" is-monster="True" is-weapon="True" is-armor="True" nogive="True"
+      name-en1="rat ogre" name-en2="rat ogres" 
+      name-ru1="крысоогр" name-ru2="крысоогра" name-ru0="крысоогров"
+      weight="100" capacity-walk="100" aggression="20" pack-size="1" 
+      weapon-skill="MELE"
+      ranged="False" wound-chance="80" lethality="75" armor-save="30"
+      >
+      <skill type="REFL" level="70"/>
+      <skill type="MELE" level="50"/>
+      <drop type="MEAT" amount="200"/>
+      <drop type="HIDE" amount="1"/>
+    </entry>
+
+    <entry name="WOLF" is-man="True" is-monster="True" is-weapon="True" nogive="True"
+      name-en1="wolfdog" name-en2="wolfdogs" 
+      name-ru1="волкособака" name-ru2="волкособаки" name-ru0="волкособак"
+      weight="15" capacity-walk="15" aggression="50" pack-size="10" 
+      weapon-skill="MELE"
+      ranged="False" wound-chance="30" lethality="75"
+      >
+      <skill type="REFL" level="90"/>
+      <skill type="MELE" level="50"/>
+      <drop type="MEAT" amount="30"/>
+      <drop type="FUR" amount="1"/>
+    </entry>
+
+    <entry name="KEES" is-man="True" is-monster="True" is-weapon="True" nogive="True"
+      name-en1="kees" name-en2="kees" 
+      name-ru1="кысь" name-ru2="кыси" name-ru0="кысей"
+      weight="15" capacity-walk="15" aggression="80" pack-size="1" 
+      weapon-skill="MELE"
+      ranged="False" wound-chance="30" lethality="100" attacks="3"
+      >
+      <skill type="REFL" level="101"/>
+      <skill type="MELE" level="95"/>
+      <drop type="MEAT" amount="20"/>
+    </entry>
+
+    <entry name="THIN" is-man="True" is-monster="True" is-weapon="True" nogive="True"
+      name-en1="thing" name-en2="thing" 
+      name-ru1="нечисть" name-ru2="нечисти" name-ru0="нечисти"
+      weight="80" capacity-walk="80" aggression="100" pack-size="1" 
+      weapon-skill="RANG"
+      ranged="True" wound-chance="50" lethality="80" armor-save="-100"
+      region-radiation="+2">
+      <skill type="REFL" level="0"/>
+      <skill type="RANG" level="100"/>
+    </entry>
+
+    <!-- Resources -->
+
+    <entry name="RAT"
+      name-en1="rat" name-en2="rats"
+      name-ru1="крыса" name-ru2="крысы" name-ru0="крыс"
+      weight="1" rations="1" produce-as="RATD"
+      radiation-from="0" radiation-to="80" radiation-effect="2"
+      temperature-from="0" temperature-effect="1"
+      mutate-percent="30" mutate-to="RRAT" dead="RATD">
+      <produce-skill name="HUNT" level="1"/>
+    </entry>
+
+    <entry name="RRAT"
+      name-en1="radrat" name-en2="radrats"
+      name-ru1="радкрыса" name-ru2="радкрысы" name-ru0="радкрыс"
+      weight="1" rations="1" produce-as="RATG"
+      radiation-from="80" radiation-to="160" radiation-effect="2"
+      temperature-from="0" temperature-effect="1"
+      dead="RATG">
+      <produce-skill name="HUNT" level="1"/>
+    </entry>
+
+    <entry name="MUSH" 
+      name-en1="mushroom" name-en2="mushrooms"
+      name-ru1="гриб" name-ru2="гриба" name-ru0="грибов"
+      weight="1" rations="1" decompose-chance="80"
+      radiation-from="0" radiation-to="150" radiation-effect="1"
+      temperature-from="-10" temperature-effect="5">
+      <produce-skill name="FARM" level="1"/>
+      <install-skill name="FARM" level="10"/>
+    </entry>
+
+    <entry name="WEED"
+      name-en1="wormwood" name-en2="wormwood"
+      name-ru1="чернобыльник" name-ru2="чернобыльника" name-ru0="чернобыльника"
+      weight="0" decompose-chance="80"
+      radiation-from="0" radiation-to="150" radiation-effect="1"
+      temperature-from="0" temperature-effect="5">
+      <produce-skill name="WITC" level="1"/>
+    </entry>
+
+    <entry name="NITR" 
+      name-en1="nitre" name-en2="nitre"
+      name-ru1="селитра" name-ru2="селитры" name-ru0="селитры"
+      weight="1">
+      <produce-skill name="CHEM" level="1"/>
+    </entry>
+    
+    
+    <!-- Drops -->
+
+    <entry name="RATD"
+      name-en1="dead rat" name-en2="dead rats"
+      name-ru1="крысиная тушка" name-ru2="крысиных тушки" name-ru0="крысиных тушек"
+      weight="1" rations="1" decompose-chance="60">
+    </entry>
+
+    <entry name="RATG"
+      name-en1="glowing rat" name-en2="glowing rats"
+      name-ru1="светящаяся тушка" name-ru2="светящихся тушки" name-ru0="светящихся тушек"
+      weight="1" rations="1" decompose-chance="60">
+    </entry>
+
+    <entry name="MEAT"
+      name-en1="meat" name-en2="meat" 
+      name-ru1="мясо" name-ru2="мяса" name-ru0="мяса"
+      weight="1" rations="1" decompose-chance="50">
+    </entry>
+
+    <entry name="HIDE"
+      name-en1="rat hide" name-en2="rat hides" 
+      name-ru1="крысиная шкура" name-ru2="крысиных шкуры" name-ru0="крысиных шкур"
+      weight="5" decompose-chance="20">
+    </entry>
+
+    <entry name="FUR"
+      name-en1="wolfdog fur" name-en2="wolfdog furs" 
+      name-ru1="шкура волкособаки" name-ru2="шкуры волкособаки" name-ru0="шкур волкособаки"
+      weight="5" decompose-chance="20">
+    </entry>
+
+    <entry name="BODY" 
+      name-en1="dead body" name-en2="dead bodies"
+      name-ru1="труп" name-ru2="трупа" name-ru0="трупов"
+      weight="70" decompose-chance="20" rations="30">
+    </entry>
+
+    <!-- Burnables (in order of burning) -->
+
+    <entry name="WOOD" 
+      name-en1="wood" name-en2="wood"
+      name-ru1="дерево" name-ru2="дерева" name-ru0="дерева"
+      weight="10" burn="True">
+      <produce-skill name="WOOD" level="1"/>
+      <install-skill name="BUIL" level="1"/>
+    </entry>
+
+    <entry name="FURN" 
+      name-en1="furniture" name-en2="furniture"
+      name-ru1="мебель" name-ru2="мебели" name-ru0="мебели"
+      weight="10" burn="True" decompose-chance="1">
+    </entry>
+    
+    <entry name="BOOK" 
+      name-en1="book" name-en2="books"
+      name-ru1="книга" name-ru2="книги" name-ru0="книг"
+      weight="1" burn="True" decompose-chance="2">
+    </entry>
+
+    <entry name="ROUB" 
+      name-en1="pack of roubles" name-en2="packs of roubles"
+      name-ru1="пачка денег" name-ru2="пачки денег" name-ru0="пачек денег"
+      weight="1" burn="True" decompose-chance="2">
+    </entry>
+
+    <entry name="GAS" 
+      name-en1="gasoline" name-en2="gasoline"
+      name-ru1="бензин" name-ru2="бензина" name-ru0="бензина"
+      weight="1" burn="True" produce-inside="FUEL">
+      <produce-skill name="DRIV" level="1"/>
+    </entry>
+
+    <!-- Pre-war materials (can't be produced) -->
+
+    <entry name="BLOC"
+      name-en1="concrete block" name-en2="concrete blocks"
+      name-ru1="бетонный блок" name-ru2="бетонных блока" name-ru0="бетонных блоков"
+      weight="100">
+      <install-skill name="BUIL" level="5"/>
+    </entry>
+
+    <entry name="CONS" 
+      name-en1="metal construction" name-en2="metal constructions"
+      name-ru1="металлоконструкция" name-ru2="металлоконструкции" name-ru0="металлоконструкций"
+      weight="40">
+      <install-skill name="BUIL" level="10"/>
+    </entry>
+
+    <entry name="DETA" 
+      name-en1="car detail" name-en2="car details"
+      name-ru1="автозапчасть" name-ru2="автозапчасти" name-ru0="автозапчастей"
+      weight="10">
+      <install-skill name="MECH" level="10"/>
+    </entry>
+
+    <entry name="TARM" 
+      name-en1="tank armor" name-en2="tank armor"
+      name-ru1="танковая броня" name-ru2="танковой брони" name-ru0="танковой брони"
+      weight="40">
+      <install-skill name="ENGI" level="10"/>
+    </entry>
+
+    <entry name="PDET" 
+      name-en1="plane detail" name-en2="plane details"
+      name-ru1="деталь самолёта" name-ru2="детали самолёта" name-ru0="деталей самолёта"
+      weight="40" region-radiation="+1" owner-radiation="+20">
+      <install-skill name="MECH" level="1"/>
+    </entry>
+
+    <entry name="ENGI" 
+      name-en1="engine" name-en2="engines" 
+      name-ru1="мотор" name-ru2="мотора" name-ru0="моторов"
+      weight="40">
+      <install-skill name="MECH" level="50"/>
+    </entry>
+
+    <entry name="CAN" 
+      name-en1="canned food" name-en2="canned food"
+      name-ru1="банка консервов" name-ru2="банки консервов" name-ru0="банок консервов" name-ruM="банки консервов"
+      weight="0" rations="10" decompose-chance="1"/>
+
+    <!-- Secondary materials  -->
+
+    <entry name="POWD" 
+      name-en1="gunpowder" name-en2="gunpowder"
+      name-ru1="порох" name-ru2="пороха" name-ru0="пороха"
+      weight="1" decompose-chance="30">
+      <produce-from1 name="NITR" amount="1"/>
+      <produce-skill name="CHEM" level="5"/>
+    </entry>
+
+    <entry name="MEDI" 
+      name-en2="medicine" name-en1="medicine"
+      name-ru1="лекарство" name-ru2="лекарства" name-ru0="лекарства"
+      weight="0" decompose-chance="5">
+      <produce-from1 name="WEED" amount="2"/>
+      <produce-skill name="WITC" level="10"/>
+    </entry>
+
+    <entry name="GRIL" 
+      name-en1="grilled rat" name-en2="grilled rats" 
+      name-ru1="жареная крыса" name-ru2="жареных крысы" name-ru0="жареных крыс"
+      weight="1" rations="3" decompose-chance="30">
+      <produce-from1 name="RATD" amount="1"/>
+      <produce-skill name="COOK" level="1"/>
+    </entry>
+
+    <entry name="ROAS" 
+      name-en1="roasted meat" name-en2="roasted meat" 
+      name-ru1="жареное мясо" name-ru2="жареного мяса" name-ru0="жареного мяса"
+      weight="1" rations="3" decompose-chance="30">
+      <produce-from1 name="MEAT" amount="1"/>
+      <produce-skill name="COOK" level="1"/>
+    </entry>
+
+    <entry name="DMUS" 
+      name-en1="dried mushroom" name-en2="dried mushrooms"
+      name-ru1="сушёный гриб" name-ru2="сушёных гриба" name-ru0="сушёных грибов"
+      weight="0" rations="1" decompose-chance="30">
+      <produce-from1 name="MUSH" amount="1"/>
+      <produce-skill name="COOK" level="1"/>
+    </entry>
+
+
+    <!-- Clothes and armor (in ascending armor save) -->
+
+    <entry name="SUIT" 
+      name-en1="vault dweller suit" name-en2="vault dweller suits"
+      name-ru1="костюм жителя убежища" name-ru2="костюма жителей убежища" name-ru0="костюмов жителей убежища"
+      weight="1" owner-radiation="-200" owner-temperature="+60"
+      decompose-chance="1">
+    </entry>
+
+    <entry name="QJAC" 
+      name-en1="quilted jacket" name-en2="quilted jackets" 
+      name-ru1="пуховик" name-ru2="пуховика" name-ru0="пуховиков"
+      weight="1" owner-temperature="+20"
+      decompose-chance="5">
+    </entry>
+
+    <entry name="SWEA" 
+      name-en1="sweater" name-en2="sweaters" 
+      name-ru1="свитер" name-ru2="свитера" name-ru0="свитеров"
+      weight="1" owner-temperature="+10"
+      decompose-chance="2">
+    </entry>
+
+    <entry name="CJAC" 
+      name-en1="camouflage jacket" name-en2="camouflage jackets" 
+      name-ru1="камуфляжный бушлат" name-ru2="камуфляжных бушлата" name-ru0="камуфляжных бушлатов"
+      weight="5" owner-temperature="+25"
+      decompose-chance="1">
+    </entry>
+
+    <entry name="PJAC" 
+      name-en1="police jacket" name-en2="police jackets" 
+      name-ru1="бушлат гибдд" name-ru2="бушлата гибдд" name-ru0="бушлатов гибдд"
+      weight="5" owner-temperature="+25"
+      decompose-chance="1">
+    </entry>
+
+    <entry name="AUNI" 
+      name-en1="army uniform" name-en2="army uniforms" 
+      name-ru1="военная форма" name-ru2="военных формы" name-ru0="военной формы"
+      weight="1" owner-temperature="+10"
+      decompose-chance="1">
+    </entry>
+
+    <entry name="PUNI" 
+      name-en1="police uniform" name-en2="police uniforms" 
+      name-ru1="милицейская форма" name-ru2="милицейских формы" name-ru0="милицейской формы"
+      weight="1" owner-temperature="+10"
+      decompose-chance="1">
+    </entry>
+
+    <entry name="UJAC" 
+      name-en1="usaf pilot parka" name-en2="usaf pilot parkas" 
+      name-ru1="куртка американского пилота" name-ru2="куртки американского пилота" name-ru0="курток американского пилота"
+      weight="1" owner-temperature="+20"
+      decompose-chance="1">
+    </entry>
+
+    <entry name="FCOA"
+      name-en1="fur coat" name-en2="fur coats" 
+      name-ru1="шуба" name-ru2="шубы" name-ru0="шуб"
+      weight="5" owner-temperature="+25"
+      decompose-chance="1">
+      <produce-from1 name="FUR" amount="5"/>
+      <produce-skill name="TAIL" level="20"/>
+    </entry>
+
+    <entry name="GASM"
+      name-en1="gas mask" name-en2="gas masks" 
+      name-ru1="противогаз" name-ru2="противогаза" name-ru0="противогазов"
+      weight="1" owner-radiation="-70"
+      decompose-chance="1">
+    </entry>
+
+    <entry name="LJAC" is-armor="True"
+      name-en1="leather jacket" name-en2="leather jackets" 
+      name-ru1="кожаная куртка" name-ru2="кожаных куртки" name-ru0="кожаных курток"
+      weight="3" owner-temperature="+10" armor-save="20"
+      decompose-chance="1">
+      <produce-from1 name="HIDE" amount="1"/>
+      <produce-skill name="TAIL" level="10"/>
+    </entry>
+
+    <entry name="LCOA" is-armor="True"
+      name-en1="leather coat" name-en2="leather coats" 
+      name-ru1="дублёнка" name-ru2="дублёнки" name-ru0="дублёнок"
+      weight="5" owner-temperature="+20" armor-save="30"
+      decompose-chance="1">
+      <produce-from1 name="HIDE" amount="1"/>
+      <produce-from2 name="FUR" amount="1"/>
+      <produce-skill name="TAIL" level="20"/>
+    </entry>
+
+    <entry name="BJAC" is-armor="True"
+      name-en1="bulletproof jacket" name-en2="bulletproof jackets" 
+      name-ru1="бронежилет" name-ru2="бронежилета" name-ru0="бронежилетов"
+      weight="8" armor-save="50"
+      decompose-chance="1">
+    </entry>
+
+    <entry name="ARMO" is-armor="True"
+      name-en1="steel armor" name-en2="steel armor" 
+      name-ru1="стальная броня" name-ru2="стальных брони" name-ru0="стальной брони"
+      weight="35" armor-save="75" owner-temperature="+10"
+      decompose-chance="1">
+      <produce-from1 name="HIDE" amount="1"/>
+      <produce-from2 name="DETA" amount="2"/>
+      <produce-skill name="ARMO" level="50"/>
+    </entry>
+
+    <entry name="SWAT" is-armor="True"
+      name-en1="swat armor" name-en2="swat armor" 
+      name-ru1="броня спецназа" name-ru2="брони спецназа" name-ru0="брони спецназа"
+      weight="15" armor-save="90" owner-temperature="+10" owner-radiation="-10"
+      decompose-chance="1">
+    </entry>
+
+    <!-- Weapons (in ascending power order for each kind) -->
+
+    <entry name="PIPE" is-weapon="True"
+      name-en1="steel pipe" name-en2="steel pipes"  
+      name-ru1="газовая труба" name-ru2="газовых трубы" name-ru0="газовых труб"
+      weight="3" decompose-chance="1" weapon-skill="MELE"
+      ranged="False" wound-chance="25" lethality="10"
+      production-rate="10">
+      <produce-from1 name="CONS" amount="1"/>
+      <produce-skill name="MECH" level="10"/>
+    </entry>
+
+    <entry name="KNIF" is-weapon="True"
+      name-en1="knife" name-en2="knives" 
+      name-ru1="нож" name-ru2="ножа" name-ru0="ножей"
+      weight="1" decompose-chance="1" weapon-skill="MELE"
+      ranged="False" wound-chance="50" lethality="30">
+    </entry>
+
+    <entry name="CHAI" is-weapon="True"
+      name-en2="chainsaws" name-en1="chainsaw" 
+      name-ru1="бензопила" name-ru2="бензопилы" name-ru0="бензопил"
+      weight="10" decompose-chance="1" weapon-skill="MELE"
+      ranged="False" wound-chance="90" ammo="GAS" lethality="90"
+      hit-modifier="-10" armor-modifier="-25">
+    </entry>
+
+    <entry name="PRIF" is-weapon="True"
+      name-en2="pipe rifles" name-en1="pipe rifle"
+      name-ru1="самопал" name-ru2="самопала" name-ru0="самопалов"
+      weight="4" decompose-chance="1" weapon-skill="RANG"
+      ranged="True" wound-chance="25" ammo="900A" lethality="50"
+      hit-modifier="-30">
+      <produce-from1 name="PIPE" amount="1"/>
+      <produce-skill name="GUNS" level="50"/>
+    </entry>
+
+    <entry name="RGGU" is-weapon="True"
+      name-en1="remodeled gas gun" name-en2="remodeled gas guns" 
+      name-ru1="переточенный газовый пистолет" name-ru2="переточенных газовых пистолета" name-ru0="переточенных газовых пистолетов"
+      weight="1" decompose-chance="1" weapon-skill="RANG"
+      ranged="True" wound-chance="25" ammo="900A" lethality="50"
+      hit-modifier="-30">
+      <produce-from1 name="GGUN" amount="1"/>
+      <produce-skill name="GUNS" level="100"/>
+    </entry>
+
+    <entry name="GGUN" is-weapon="True"
+      name-en1="gas gun" name-en2="gas gun" 
+      name-ru1="газовый пистолет" name-ru2="газовых пистолета" name-ru0="газовых пистолетов"
+      weight="1" decompose-chance="1" weapon-skill="RANG"
+      ranged="True" wound-chance="50" ammo="GCAR" lethality="1">
+    </entry>
+
+    <entry name="SSHO" is-weapon="True"
+      name-en1="sawed-off shotgun" name-en2="sawed-off shotguns" 
+      name-ru1="обрез" name-ru2="обреза" name-ru0="обрезов"
+      weight="2" decompose-chance="1" weapon-skill="RANG"
+      ranged="True" wound-chance="50" ammo="12GA" lethality="50"
+      hit-modifier="+25" armor-modifier="+35">
+    </entry>
+
+    <entry name="PM" is-weapon="True"
+      name-en1="makarov" name-en2="makarovs" 
+      name-ru1="макаров" name-ru2="макаровых" name-ru0="макаровых"
+      weight="1" decompose-chance="1" weapon-skill="RANG"
+      ranged="True" wound-chance="70" ammo="900A" lethality="75"
+      armor-modifier="-10">
+    </entry>
+
+    <entry name="APS" is-weapon="True"
+      name-en1="stechkin" name-en2="stechkins" 
+      name-ru1="стечкин" name-ru2="стечкиных" name-ru0="стечкиных"
+      weight="1" decompose-chance="1" weapon-skill="RANG"
+      ranged="True" wound-chance="70" ammo="900A" lethality="75"
+      attacks="3" hit-modifier="-30" armor-modifier="-10">
+    </entry>
+
+    <entry name="RIFL" is-weapon="True"
+      name-en1="hunting rifle" name-en2="hunting rifles" 
+      name-ru1="охотничье ружьё" name-ru2="охотничьих ружья" name-ru0="охотничьих ружей"
+      weight="4" decompose-chance="1" weapon-skill="RANG"
+      ranged="True" wound-chance="90" ammo="556A" lethality="75"
+      hit-modifier="+10" armor-modifier="-10">
+    </entry>
+
+    <entry name="SHOT" is-weapon="True"
+      name-en1="shotgun" name-en2="shotguns" 
+      name-ru1="дробовик" name-ru2="дробовика" name-ru0="дробовиков"
+      weight="4" decompose-chance="1" weapon-skill="RANG"
+      ranged="True" wound-chance="70" ammo="12GA" lethality="50"
+      hit-modifier="+25" armor-modifier="+25">
+    </entry>
+
+    <entry name="M16" is-weapon="True"
+      name-en1="assault rifle" name-en2="assault rifles" 
+      name-ru1="штурмовая винтовка" name-ru2="штурмовых винтовки" name-ru0="штурмовых винтовок"
+      weight="4" decompose-chance="1" weapon-skill="RANG"
+      ranged="True" wound-chance="90" ammo="556A" lethality="75"
+      attacks="4" hit-modifier="-10" armor-modifier="-10">
+    </entry>
+
+    <entry name="AK101" is-weapon="True"
+      name-en1="kalashnikov-m" name-en2="kalashnikovs-m" 
+      name-ru1="калашников-м" name-ru2="калашниковых-м" name-ru0="калашниковых-м"
+      weight="4" decompose-chance="1" weapon-skill="RANG"
+      ranged="True" wound-chance="90" ammo="556A" lethality="75"
+      attacks="5" hit-modifier="-20" armor-modifier="-10">
+    </entry>
+
+    <entry name="AKM" is-weapon="True"
+      name-en1="kalashnikov" name-en2="kalashnikovs" 
+      name-ru1="калашников" name-ru2="калашниковых" name-ru0="калашниковых"
+      weight="4" decompose-chance="1" weapon-skill="RANG"
+      ranged="True" wound-chance="95" ammo="762A" lethality="90"
+      attacks="5" hit-modifier="-25" armor-modifier="-10">
+    </entry>
+
+    <entry name="AUTO" is-weapon="True"
+      name-en1="autogun" name-en2="autoguns" 
+      name-ru1="пулемёт" name-ru2="пулемёта" name-ru0="пулемётов"
+      weight="40" decompose-chance="1" weapon-skill="HWPN"
+      ranged="True" anti-tank="True" heavy="True" hp="1"
+      wound-chance="40" ammo="127A" lethality="100"
+      attacks="5" hit-modifier="-25">
+      <install-skill name="MECH" level="1"/>
+    </entry>
+
+    <entry name="FLAM" is-weapon="True"
+      name-en1="flamethrower" name-en2="flamethrowes" 
+      name-ru1="огнемёт" name-ru2="огнемёта" name-ru0="огнемётов"
+      weight="40" decompose-chance="1" weapon-skill="HWPN"
+      ranged="True" heavy="True"
+      wound-chance="50" ammo="GAS" lethality="50"
+      targets="5" hit-modifier="+25" armor-modifier="-100">
+      <install-skill name="MECH" level="1"/>
+    </entry>
+
+    <entry name="BOMB" is-weapon="True"
+      name-en1="bomb" name-en2="bomb"
+      name-ru1="бомба" name-ru2="бомбы" name-ru0="бомб"
+      weight="5" decompose-chance="5" weapon-skill="EXPL"
+      explosive="True" wound-chance="50" lethality="5">
+      <produce-from1 name="POWD" amount="50"/>
+      <produce-skill name="EXPL" level="50"/>
+    </entry>
+
+
+    <!-- Ammo -->
+
+    <entry name="900A" 
+      name-en1="9mm ammo" name-en2="9mm ammo"
+      name-ru1="патрон 9мм" name-ru2="патрона 9мм" name-ru0="патронов 9мм"
+      weight="0" decompose-chance="5" case="900C">
+      <produce-from1 name="POWD" amount="1"/>
+      <produce-from2 name="900C" amount="1"/>
+      <produce-skill name="GUNS" level="10"/>
+    </entry>
+
+    <entry name="900C" 
+      name-en1="9mm case" name-en2="9mm cases"
+      name-ru1="гильза 9мм" name-ru2="гильзы 9мм" name-ru0="гильз 9мм"
+      weight="0" decompose-chance="1">
+    </entry>
+
+    <entry name="762A" 
+      name-en1="7.62mm ammo" name-en2="7.62mm ammo"
+      name-ru1="патрон 7.62мм" name-ru2="патрона 7.62мм" name-ru0="патронов 7.62мм"
+      weight="0" decompose-chance="5" case="762C">
+      <produce-from1 name="POWD" amount="1"/>
+      <produce-from2 name="762C" amount="1"/>
+      <produce-skill name="GUNS" level="10"/>
+    </entry>
+
+    <entry name="762C" 
+      name-en1="7.62mm case" name-en2="7.62mm cases"
+      name-ru1="гильза 7.62мм" name-ru2="гильзы 7.62мм" name-ru0="гильз 7.62мм"
+      weight="0" decompose-chance="1">
+    </entry>
+
+    <entry name="556A" 
+      name-en1="5.56mm ammo" name-en2="5.56mm ammo"
+      name-ru1="патрон 5.56мм" name-ru2="патрона 5.56мм" name-ru0="патронов 5.56мм"
+      weight="0" decompose-chance="5" case="556C">
+      <produce-from1 name="POWD" amount="1"/>
+      <produce-from2 name="556C" amount="1"/>
+      <produce-skill name="GUNS" level="10"/>
+    </entry>
+
+    <entry name="556C" 
+      name-en1="5.56mm case" name-en2="5.56mm cases"
+      name-ru1="гильза 5.56мм" name-ru2="гильзы 5.56мм" name-ru0="гильз 5.56мм"
+      weight="0" decompose-chance="1">
+    </entry>
+
+    <entry name="127A" 
+      name-en1="12.7mm ammo" name-en2="12.7mm ammo"
+      name-ru1="патрон 12.7мм" name-ru2="патрона 12.7мм" name-ru0="патронов 12.7мм"
+      weight="0" decompose-chance="5" case="127C">
+      <produce-from1 name="POWD" amount="2"/>
+      <produce-from2 name="127C" amount="1"/>
+      <produce-skill name="GUNS" level="10"/>
+    </entry>
+
+    <entry name="127C" 
+      name-en1="12.7mm case" name-en2="12.7mm cases"
+      name-ru1="гильза 12.7мм" name-ru2="гильзы 12.7мм" name-ru0="гильз 12.7мм"
+      weight="0" decompose-chance="1">
+    </entry>
+
+    <entry name="12GA" 
+      name-en1="12 gauge ammo" name-en2="12 gauge ammo" 
+      name-ru1="патрон 12 калибра" name-ru2="патрона 12 калибра" name-ru0="патронов 12 калибра"
+      weight="0" decompose-chance="5">
+      <produce-from1 name="POWD" amount="2"/>
+      <produce-skill name="GUNS" level="5"/>
+    </entry>
+
+    <entry name="12GC" 
+      name-en1="12 gauge case" name-en2="12 gauge cases"
+      name-ru1="гильза 12 калибра" name-ru2="гильзы 12 калибра" name-ru0="гильз 12 калибра"
+      weight="0" decompose-chance="1">
+    </entry>
+
+    <entry name="GCAR" 
+      name-en1="gas cartridge" name-en2="gas cartridges"
+      name-ru1="газовый патрон" name-ru2="газовых патрона" name-ru0="газовых патронов"
+      weight="0" decompose-chance="50">
+    </entry>
+
+
+
+  </item>
+  
+  <terrain>
+    <entry name="W" name-en="wasteland" name-ru="пустошь" mp="1">
+      <monster type="OGRE" chance="5"/>
+      <monster type="WOLF" chance="50"/>
+    </entry>
+    <entry name="F" name-en="burned forest" name-ru="сожжённый лес" mp="2" 
+      vehicles="False">
+      <monster type="WOLF" chance="100"/>
+      <monster type="KEES" chance="10"/>
+    </entry>
+    <entry name="R" name-en="ruined city" name-ru="руины города" mp="2">
+    </entry>
+    <entry name="G" name-en="glowing lands" name-ru="светящиеся земли" mp="1">
+      <monster type="OGRE" chance="50"/>
+    </entry>
+    <entry name="g" name-en="glowing ruins" name-ru="светящиеся руины" mp="2">
+      <monster type="KEES" chance="5"/>
+      <monster type="THIN" chance="5"/>
+      <monster type="OGRE" chance="50"/>
+    </entry>
+    <entry name="C" name-en="crater" name-ru="кратер" mp="2"
+      vehicles="False">
+      <monster type="KEES" chance="30"/>
+      <monster type="THIN" chance="30"/>
+    </entry>
+    <entry name="w" name-en="glowing ice" name-ru="светящийся лёд" mp="1" 
+      vehicles="False"/>
+  </terrain>
+  
+  <weather>
+    <entry name="clear" name-en="clear" name-ru="ясно" radiation="50"/>
+    <entry name="clouds" name-en="clouds" name-ru="пасмурно"/>
+    <entry name="fallout" name-en="fallout" name-ru="ливень" radiation="200"/>
+  </weather>
+  
+  <month>
+    <entry name-en="spring" name-ru="весна" weather="clouds" temperature="-20"/>
+    <entry name-en="spring" name-ru="весна" weather="clouds" temperature="-10"/>
+    <entry name-en="spring" name-ru="весна" weather="clear" temperature="0"/>
+    <entry name-en="summer" name-ru="лето" weather="clouds" temperature="+5"/>
+    <entry name-en="summer" name-ru="лето" weather="clouds" temperature="+10"/>
+    <entry name-en="autumn" name-ru="осень" weather="clouds" temperature="+5"/>
+    <entry name-en="autumn" name-ru="осень" weather="fallout" temperature="-10"/>
+    <entry name-en="autumn" name-ru="осень" weather="clouds" temperature="-20"/>
+    <entry name-en="winter" name-ru="зима" weather="clouds" temperature="-30"/>
+    <entry name-en="winter" name-ru="зима" weather="clouds" temperature="-40"/>
+    <entry name-en="winter" name-ru="зима" weather="clouds" temperature="-50"/>
+    <entry name-en="winter" name-ru="зима" weather="clouds" temperature="-60"/>
+    <entry name-en="winter" name-ru="зима" weather="clouds" temperature="-50"/>
+    <entry name-en="winter" name-ru="зима" weather="clouds" temperature="-40"/>
+    <entry name-en="winter" name-ru="зима" weather="clouds" temperature="-30"/>
+  </month>
+
+  <names>
+    <group name="ru" chance="90">
+      <first>
+        <name value="Сергей" man="True"/>
+        <name value="Павел" man="True"/>
+        <name value="Николай" man="True"/>
+        <name value="Иван" man="True"/>
+        <name value="Василий" man="True"/>
+        <name value="Владимир" man="True"/>
+        <name value="Вячеслав" man="True"/>
+        <name value="Михаил" man="True"/>
+        <name value="Никита" man="True"/>
+        <name value="Даниил" man="True"/>
+        <name value="Алексей" man="True"/>
+        <name value="Александр" man="True"/>
+        <name value="Наталья" woma="True"/>
+        <name value="Ольга" woma="True"/>
+        <name value="Ирина" woma="True"/>
+        <name value="Марина" woma="True"/>
+        <name value="Анна" woma="True"/>
+        <name value="Лариса" woma="True"/>
+        <name value="Людмила" woma="True"/>
+        <name value="Вероника" woma="True"/>
+        <name value="Василий" man="True"/>
+        <name value="Назар" man="True"/>
+        <name value="Тарас" man="True"/>
+        <name value="Галина" woma="True"/>
+        <name value="Олеся" woma="True"/>
+        <name value="Юлия" woma="True"/>
+        <name value="Ольга" woma="True"/>
+        <name value="Елена" woma="True"/>
+      </first>
+      <second>
+        <name value="Иванов" man="True"/>
+        <name value="Петров" man="True"/>
+        <name value="Кузнецов" man="True"/>
+        <name value="Фролов" man="True"/>
+        <name value="Копачев" man="True"/>
+        <name value="Мохов" man="True"/>
+        <name value="Орлов" man="True"/>
+        <name value="Багров" man="True"/>
+        <name value="Синицын" man="True"/>
+        <name value="Лебедев" man="True"/>
+        <name value="Антонов" man="True"/>
+        <name value="Донченко" man="True"/>
+        <name value="Засадный" man="True"/>
+        <name value="Захаров" man="True"/>
+        <name value="Мельник" man="True"/>
+        <name value="Пушкарский" man="True"/>
+        <name value="Полишевский" man="True"/>
+        <name value="Кураков" man="True"/>
+        <name value="Городецкий" man="True"/>
+        <name value="Иванова" woma="True"/>
+        <name value="Петрова" woma="True"/>
+        <name value="Ковалёва" woma="True"/>
+        <name value="Мохова" woma="True"/>
+        <name value="Орлова" woma="True"/>
+        <name value="Лигова" woma="True"/>
+        <name value="Новикова" woma="True"/>
+        <name value="Малышева" woma="True"/>
+        <name value="Никитина" woma="True"/>
+        <name value="Задорожная" woma="True"/>
+        <name value="Каганова" woma="True"/>
+        <name value="Романова" woma="True"/>
+        <name value="Степанова" woma="True"/>
+        <name value="Гончаренко" man="True" woma="True"/>
+        <name value="Авдиенко" man="True" woma="True"/>
+        <name value="Стеченко" man="True" woma="True"/>
+        <name value="Бесчастных" man="True" woma="True"/>
+        <name value="Ройтман" man="True" woma="True"/>
+        <name value="Рабинович" man="True" woma="True"/>
+        <name value="Лещинский" man="True"/>
+        <name value="Лямин" man="True"/>
+        <name value="Олейник" woma="True" man="True"/>
+        <name value="Голянова" woma="True"/>
+        <name value="Гнатейко" woma="True" man="True"/>
+        <name value="Петренко" woma="True" man="True"/>
+        <name value="Ульященко" woma="True" man="True"/>
+        <name value="Тимчин" man="True"/>
+        <name value="Шульга" man="True" woma="True"/>
+        <name value="Замоскворецкий" man="True"/>
+        <name value="Петренко" man="True" woma="True"/>
+        <name value="Котейко" man="True" woma="True"/>
+        <name value="Хмелевский" man="True"/>
+        <name value="Москалёв" man="True"/>
+        <name value="Гончаренко" man="True" woma="True"/>
+        <name value="Бесчастных" man="True" woma="True"/>
+      </second>
+    </group>
+    <group name="en" chance="8">
+      <first>
+        <name value="John" man="True"/>
+        <name value="Mike" man="True"/>
+        <name value="Mario" man="True"/>
+        <name value="Paul" man="True"/>
+        <name value="Harry" man="True"/>
+        <name value="Jane" woma="True"/>
+        <name value="Julia" woma="True"/>
+        <name value="Agness" woma="True"/>
+        <name value="Sarah" woma="True"/>
+        <name value="Violet" woma="True"/>
+      </first>
+      <second>
+        <name value="Smith" man="True" woma="True"/>
+        <name value="Johnson" man="True" woma="True"/>
+        <name value="Cooper" man="True" woma="True"/>
+        <name value="Lemarte" man="True" woma="True"/>
+        <name value="McCormack" man="True" woma="True"/>
+        <name value="Testerburger" man="True" woma="True"/>
+        <name value="Connor" man="True" woma="True"/>
+      </second>
+    </group>
+    <group name="jp" chance="2">
+      <first>
+        <name value="Keitaro" man="True"/>
+        <name value="Oojiro" man="True"/>
+        <name value="Shirai" man="True"/>
+        <name value="Rumiko" woma="True"/>
+        <name value="Haruka" woma="True"/>
+        <name value="Sakura" woma="True"/>
+      </first>
+      <second>
+        <name value="Suzuki" man="True" woma="True"/>
+        <name value="Tanaka" man="True" woma="True"/>
+        <name value="Futaba" man="True" woma="True"/>
+        <name value="Mizuki" man="True" woma="True"/>
+      </second>
+    </group>
+  </names>
+    
+  <chosen>
+    <skill type="REFL" level="50"/>
+    <skill type="RANG" level="50"/>
+    <skill type="MELE" level="50"/>
+    <skill type="COOK" level="50"/>
+    <skill type="SCAV" level="50"/>
+    <skill type="DRIV" level="50"/>
+    <skill type="SURV" level="100"/>
+    <skill type="HUNT" level="50"/>
+    <skill type="FARM" level="50"/>
+    <skill type="WOOD" level="50"/>
+    <skill type="BUIL" level="50"/>
+    <item type="SUIT" amount="1"/>
+    <item type="GGUN" amount="1"/>
+    <item type="GCAR" amount="10"/>
+    <item type="CAN" amount="100"/>
+  </chosen>
+    
+</data>

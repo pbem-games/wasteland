@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>Правила Wasteland</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<style>body {font-family: Tahoma; font-size: 10pt;}
+.cmddesc {color: #C0C0C0} 
+.report { border: solid 1px #808080; padding-left: 15px; font-family: Courier New; font-size: 9pt;}</style>
+
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<h2 align="left">Команды сервера</h2>
+<p>Адрес сервера: wasteland-pbem@yandex.ru</p>
+<h3>Как присоединиться к игре</h3>
+<p>Отправьте на адрес сервера следующее письмо. Тема письма обязательно должна 
+  быть &quot;<b>request</b>&quot;, иначе запрос не будет обработан. Имена можно 
+  писать по-русски (кодировка windows-1251 или koi8-r). В теле письма опционально 
+  могут присутствовать следующие строки:</p>
+<div class="report">
+  <p>Faction: Название Фракции<br>
+    Chosen: man (вариант: woman)<br>
+    Name: Имя Избранного<br>
+    Language: ru (вариант: en)<br>
+    Skill: PYRO, STAI или SGUN*</p>
+</div>
+<p>* Параметр Skill задаёт специальный навык, доступный вашему Избранному.
+Можно указать только один из предложенных навыков. Время от времени список
+специальных навыков будет пополняться, поэтому заглядывайте в правила,
+если решите начать игру заново.</p>
+<ul>
+  <li>пиромания [PYRO]: Возможность использовать разные виды гранат.
+  <li>опытный портной [STAI]: Умение изготавливать особые виды одежды.
+  <li>опытный оружейник [SGUN]: Умение изготавливать двустволки.
+</ul>
+
+
+<h3>Как послать приказ</h3>
+<p>Отправьте на адрес сервера письмо со своими приказами, например:</p>
+<div class="report">
+  <p>#orders 123 &quot;password&quot;</p>
+<p>person 132<br>
+  &nbsp;&nbsp;produce RAT</p>
+  <p>#end<br>
+  </p>
+  </div>
+<h3>Как перезаказать отчёт, если вы почему-то его не получили</h3>
+<div class="report">
+  <p>#resend 123 &quot;password&quot;</p>
+</div>
+
+<h3>Как отправить сообщение другому игроку</h3>
+<p>Для открытого общения на игровые темы подпишитесь на рассылку <a href="http://groups.yahoo.com/group/wasteland-radio">wasteland-radio</a>. 
+</p>
+<h3></h3>
+<p>Чтобы послать приватное сообщение на номер фракции (например, 155), отправьте 
+  на адрес сервера следующее письмо:</p>
+<div class="report"> 
+  <p>#mail 155 123 &quot;password&quot;<br>
+  </p>
+  <p>Hello there!</p>
+  <p>#end</p>
+</div>
+<p>Где 123 &quot;password&quot; - ваш номер и пароль. Их можно не указывать, если 
+  вы хотите отправить анонимку.</p>
+<p>Если персонаж скрывает фракцию, можно послать сообщение на номер персонажа 
+  (например, 1536):</p>
+<div class="report">
+  <p>#mail person 1536 123 &quot;password&quot;</p>
+</div>
+<h3>Технические вопросы</h3>
+Если вы хотите обсудить развитие движка игры, посмотреть исходники или сообщить 
+об ошибке, подпишитесь на рассылку <a href="http://groups.yahoo.com/group/wasteland-pbem">wasteland-pbem</a>. 
+Исходники игры и клиента лежат в секции &quot;Files&quot;. 
+<div class="report"></div>
+
+</body>
+</html>
